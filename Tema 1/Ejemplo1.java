@@ -1,5 +1,6 @@
-public class Ejemplo1 {
-	public static void main(String[] args) {
+class Ejemplo1 {
+	public static void main(String args[])
+	{
 	
 		double dividendo = 20.0;
 	
@@ -9,6 +10,5 @@ public class Ejemplo1 {
 	
 		System.out.println((dividendo/divisor) + sumarAlFinal);
 	
-	
-  }
+	}
 }

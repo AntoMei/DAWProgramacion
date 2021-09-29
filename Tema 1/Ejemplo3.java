@@ -1,16 +1,10 @@
-public class Ejemplo3 {
-	public static void main(String[] args) {
-	
-		int lado;
+class Ejemplo3
+{
+	public static void main(String args[])
+{
+		int x = 5;
 		
-		int squareArea;
-		
-		lado = 5;
-		
-		squareArea = lado*lado;
-		
-		System.out.println(squareArea);
+		System.out.println(x*x);
 		
 	}
 }
-		
