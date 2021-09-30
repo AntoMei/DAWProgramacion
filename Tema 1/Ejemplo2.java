@@ -1,4 +1,4 @@
-public class Ejemplo2 {
+public class plo2 {
 	public static void main(String[] args) {
 	
 		int dividendo = 20;

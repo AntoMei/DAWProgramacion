@@ -1,4 +1,4 @@
-class Ejemplo1 {
+class plo1 {
 	public static void main(String args[])
 	{
 	

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ejemplo4 {
+public class plo4 {
     public static void main (String argv[]) {
         float side;
         float squareArea;
