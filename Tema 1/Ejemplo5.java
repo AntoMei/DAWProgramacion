@@ -9,7 +9,7 @@ public class Ejemplo5{
         int division;
 
         System.out.println("Escribe el primer numero:");
-        Scanner inputValue;EjemEjem
+        Scanner inputValue;
         inputValue = new Scanner(System.in);
         numero1 = inputValue.nextInt();
 
