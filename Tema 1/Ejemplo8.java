@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class plo8 {
+public class Ejemplo8 {
     public static void main (String argv[]) {
         int edad;
 

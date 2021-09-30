@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class plo6 {
+public class Ejemplo6 {
     public static void main (String argv[]) {
         float area;
         final double PI = 3.14159;

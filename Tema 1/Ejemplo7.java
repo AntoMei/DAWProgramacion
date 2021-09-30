@@ -1,23 +1,20 @@
 import java.util.Scanner;
-public class plo7 {
+public class Ejemplo7 {
     public static void main (String argv[]) {
-        int precio;
-        int preciorebajado;
-        int descuento;
+        double precio;
+        double preciorebajado;
+        double descuento;
 
         System.out.println("Introduce el precio real");
         Scanner inputValue;
         inputValue = new Scanner(System.in);
-        precio = inputValue.nextInt();
+        precio = inputValue.nextDouble();
 
         System.out.println("Introduce el precio rebajado");
         Scanner inputValue2;
-        inputValue = new Scanner(System.in);
-        preciorebajado = inputValue2.nextInt();
+        inputValue2 = new Scanner(System.in);
+        preciorebajado = inputValue2.nextDouble();
 
-        descuento = (precio-preciorebajado)/precio * 100;
-
-     
-
-        
-        
+        System.out.println("descuento:"+(precio-preciorebajado)/precio);
+    }
+}
