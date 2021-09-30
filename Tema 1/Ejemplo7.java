@@ -16,5 +16,6 @@ public class Ejemplo7 {
         preciorebajado = inputValue2.nextDouble();
 
         System.out.println("descuento:"+(precio-preciorebajado)/precio);
+        
     }
 }

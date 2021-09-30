@@ -20,4 +20,3 @@ public class Ejemplo6 {
         inputValue.close();
     }
 }
-
