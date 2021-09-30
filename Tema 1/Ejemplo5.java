@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class plo5 {
+public class Ejemplo5{
     public static void main (String argv[]) { 
         int numero1;
         int numero2;
@@ -9,7 +9,7 @@ public class plo5 {
         int division;
 
         System.out.println("Escribe el primer numero:");
-        Scanner inputValue;
+        Scanner inputValue;EjemEjem
         inputValue = new Scanner(System.in);
         numero1 = inputValue.nextInt();
 
