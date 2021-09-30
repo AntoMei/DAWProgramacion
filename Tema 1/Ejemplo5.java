@@ -27,5 +27,8 @@ public class Ejemplo5 {
         System.out.println("la resta del numero1 y numero2:"+resta);
         System.out.println("la multiplicacion del nuemero1 y numero2:"+multiplicacion);
         System.out.println("la division del numero1 y numero2:"+division);
+
+        inputValue.close();
+        inputValue2.close();
     }
 }
