@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ejercicio5 {
+public class Ejemplo5 {
     public static void main (String argv[]) { 
         int numero1;
         int numero2;
@@ -27,5 +27,6 @@ public class Ejercicio5 {
         System.out.println("la resta del numero1 y numero2:"+resta);
         System.out.println("la multiplicacion del nuemero1 y numero2:"+multiplicacion);
         System.out.println("la division del numero1 y numero2:"+division);
+   
     }
 }
