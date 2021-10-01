@@ -4,6 +4,28 @@
     // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
+        {
+            "type": "java",
+            "name": "Launch Ejemplo10",
+            "request": "launch",
+            "mainClass": "Ejemplo10",
+            "projectName": "Tema 1_b3904d06"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo11",
+            "request": "launch",
+            "mainClass": "Ejemplo11",
+            "projectName": "Tema 1_b3904d06"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo7",
+            "request": "launch",
+            "mainClass": "Ejemplo7",
+            "projectName": "Tema 1_b3904d06"
+        },
         {
             "type": "java",
             "name": "Launch Ejemplo9",

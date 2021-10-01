@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Ejemplo7 {
     public static void main (String argv[]) {
         double precio;
-        double preciorebajado;
+        double precioRebajado;
         double descuento;
 
         System.out.println("Introduce el precio real");
@@ -13,9 +13,13 @@ public class Ejemplo7 {
         System.out.println("Introduce el precio rebajado");
         Scanner inputValue2;
         inputValue2 = new Scanner(System.in);
-        preciorebajado = inputValue2.nextDouble();
+        precioRebajado = inputValue2.nextDouble();
 
-        System.out.println("descuento:"+(precio-preciorebajado)/precio);
-        
+       descuento=(precio-precioRebajado)/precio*100;
+
+        System.out.println("descuento:"+(precio-precioRebajado)/+precio*100);
+        inputValue.close();
+        inputValue2.close();
+
     }
 }
