@@ -16,7 +16,6 @@ public class Ejemplo6 {
 
         System.out.println("lengh:"+length);
         System.out.println("area:"+area);
-
         inputValue.close();
     }
 }
