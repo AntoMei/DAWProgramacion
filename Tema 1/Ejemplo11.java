@@ -10,20 +10,21 @@ public class Ejemplo11 {
         valor1 = inputValue.nextInt();
 
         System.out.println("Introduce el valor 2");
-        Scanner inputValue;
-        inputValue = new Scanner(System.in);
-        valor2 = inputValue.nextInt();
+        Scanner inputValue1;
+        inputValue1 = new Scanner(System.in);
+        valor2 = inputValue1.nextInt();
 
         valor1 = 1;
         valor2 = 2;
 
-        if(valor1>valor2){
-            System.out.println("Orden ascendente");
+        if (1>2) 
+            if (2>1);{
+                System.out.println("Ordenar de forma ascendente:"+1+2);
 
-        inputValue.close();
-        inputValue2.close();
+                inputValue.close();
+                inputValue1.close();
+            }
         }
     }
 }
-        
-        
+

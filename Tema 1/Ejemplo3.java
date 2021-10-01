@@ -1,10 +1,10 @@
 class Ejemplo3
 {
 	public static void main(String args[])
-{
-		int x = 5;
-		
-		System.out.println(x*x);
-		
+	{
+		int squareArea = 5*5;
+
+		System.out.println(squareArea);
+
 	}
 }
