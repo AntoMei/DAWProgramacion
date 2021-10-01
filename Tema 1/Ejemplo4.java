@@ -6,7 +6,6 @@ public class Ejemplo4 {
 
         System.out.println("Enter the side:");
 
-        //Reading the value
         Scanner inputValue;
         inputValue = new Scanner(System.in);
         side = inputValue.nextFloat();
