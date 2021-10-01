@@ -12,7 +12,6 @@ public class Ejemplo9 {
             System.out.println("Mayor de edad");
         }else{
             System.out.println("Menor de edad");
-
             inputValue.close();
         }
     }
