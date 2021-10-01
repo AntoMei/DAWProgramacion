@@ -17,7 +17,7 @@ public class Ejemplo7 {
 
        descuento=(precio-precioRebajado)/precio*100;
 
-        System.out.println("descuento:"+(precio-precioRebajado)/+precio*100);
+        System.out.println("descuento:"+(precio-precioRebajado)/+precio*100); 
         inputValue.close();
         inputValue2.close();
     }
