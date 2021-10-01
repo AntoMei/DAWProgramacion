@@ -14,7 +14,7 @@ public class Ejemplo10 {
             System.out.println("Negativo");
 
             inputValue.close();
-
+      
         }
     }
 }
