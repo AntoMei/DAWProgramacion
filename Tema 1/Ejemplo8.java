@@ -10,7 +10,6 @@ public class Ejemplo8 {
 
         if (edad >= 18){
             System.out.println("Mayor de edad");
-        
             inputValue.close();
         }
     }
