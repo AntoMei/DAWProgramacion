@@ -13,18 +13,15 @@ public class Ejemplo11 {
         Scanner inputValue1;
         inputValue1 = new Scanner(System.in);
         valor2 = inputValue1.nextInt();
-
-        valor1 = 1;
-        valor2 = 2;
-
-        if (1>2) 
-            if (2>1);{
-                System.out.println("Ordenar de forma ascendente:"+1+2);
-
-                inputValue.close();
-                inputValue1.close();
-            }
-        }
+        
+       
+        if (valor1>valor2){
+            System.out.println("Orden Ascendente:"+valor1+""+valor2);
+   }
+        inputValue.close();
+        inputValue1.close();
+        
+        
     }
 }
 
