@@ -3,7 +3,7 @@ public class Ejemplo6 {
     public static void main (String argv[]) {
         float area;
         final double PI = 3.14159;
-        int radio;
+        float radio;
         float length;
 
         System.out.println("Pide el radio de una circunferencia");
