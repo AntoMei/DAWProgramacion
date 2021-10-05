@@ -5,10 +5,10 @@ public class Ejemplo6 {
         final double PI = 3.14159;
         float radio;
         float length;
-
-        System.out.println("Pide el radio de una circunferencia");
+       
         Scanner inputValue;
         inputValue = new Scanner(System.in);
+        System.out.println("Pide el radio de una circunferencia");
         radio = inputValue.nextInt();
 
         length = (float) (2*PI*radio);

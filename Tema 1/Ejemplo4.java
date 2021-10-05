@@ -3,10 +3,11 @@ public class Ejemplo4 {
     public static void main (String argv[]) {
         float side;
         float squareArea;
-
-        System.out.println("Enter the side:");
+       
         Scanner inputValue;
         inputValue = new Scanner(System.in);
+        
+        System.out.println("Enter the side:");
         side = inputValue.nextFloat();
 
         squareArea = side * side;
