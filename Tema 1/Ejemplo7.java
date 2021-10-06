@@ -15,10 +15,10 @@ public class Ejemplo7 {
         System.out.println("Introduce el precio rebajado");
         
         precioRebajado = inputValue.nextDouble();
-       
+        inputValue.close();
         descuento=(precio-precioRebajado)/precio*100;
 
         System.out.println("descuento:"+descuento); 
-        inputValue.close();
+
     }
 }
