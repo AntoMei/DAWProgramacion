@@ -1,20 +1,19 @@
 import java.util.Scanner;
 public class Ejemplo10 {
     public static void main (String argv[]) {
-        int valor;
+        //Declaración de variables
+        short valor;
+        Scanner inputValue = new Scanner(System.in);
+       
+        //Empieza el proceso 
 
         System.out.println("Introduce el numero");
-        Scanner inputValue;
-        inputValue = new Scanner(System.in);
-        valor = inputValue.nextInt();
-
+        valor = inputValue.nextShort();
+        inputValue.close();
         if (valor >=0){
             System.out.println("Positivo");
         }else{
-            System.out.println("Negativo");
-
-            inputValue.close();
-      
+            System.out.println("Negativo"); 
         }
     }
 }
