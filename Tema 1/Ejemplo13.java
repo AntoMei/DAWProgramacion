@@ -8,7 +8,7 @@ public class Ejemplo13 {
 
         //Empieza el programa
         
-System.out.println("Introduce el valor 1");
+        System.out.println("Introduce el valor 1");
         x = inputValue.nextDouble();
 
         System.out.println("Introduce el valor 2");
