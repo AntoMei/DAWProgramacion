@@ -10,12 +10,11 @@ public class Ejemplo9 {
       System.out.println("Introduce la edad");
      
       edad = inputValue.nextShort();
-        
+      inputValue.close();
       if (edad >= 18){
             System.out.println("Mayor de edad");
         }else{
             System.out.println("Menor de edad");
-            inputValue.close();
         }
     }
 }
