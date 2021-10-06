@@ -1,25 +1,13 @@
 import java.util.Scanner;
 public class Ejemplo14 {
     public static void main (String argv[]) {
-
-        int nota;
+      //Declaración de variables
+      int nota;
+      Scanner inputValue = new Scanner(System.in);
         
-        System.out.println("Introduce la nota");
-        Scanner inputValue;
-        inputValue = new Scanner(System.in);
-        nota = inputValue.nextInt();
+      //Empieza el programa
 
-        inputValue.close();
+      System.out.println("Introduce la nota");
+      nota = inputValue.nextInt();
 
-      if (nota==0 && nota<3){
-      System.out.println("Muy deficiente");
-      }
-    }
-  }
-}
-
-      
-
-
-        
-
+      inputValue.close();
