@@ -1,21 +1,25 @@
 import java.util.Scanner;
 public class Ejemplo11 {
     public static void main (String argv[]) {
-        int valor1; 
-        int valor2;
+        //Decalración de variables
+        double x,y;  
+        Scanner inputValue = new Scanner(System.in);
+
+        //Empieza el programa
         
-        Scanner inputValue;
-        inputValue = new Scanner(System.in);
         System.out.println("Introduce el valor 1");
-        valor1 = inputValue.nextInt();
+        x = inputValue.nextDouble();
 
         System.out.println("Introduce el valor 2");
-        valor2 = inputValue.nextInt();
+        y = inputValue.nextDouble();
         
         inputValue.close();
 
-        
-
+        if(x <= y) {
+            System.out.println(x+" "+y);
+        }
+        else{
+            System.out.println(y+" "+x);
+           }
+        }
     }
-}
-
