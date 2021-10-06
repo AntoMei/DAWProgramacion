@@ -22,4 +22,3 @@ public class Ejemplo12 {
         inputValue.close();
     }
 }
-
