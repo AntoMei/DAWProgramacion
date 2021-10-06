@@ -1,3 +1,4 @@
+import java.security.KeyStore.ProtectionParameter;
 import java.util.Scanner;
 public class Ejemplo7 {
     public static void main (String argv[]) {
@@ -18,7 +19,7 @@ public class Ejemplo7 {
        
         descuento=(precio-precioRebajado)/precio*100;
 
-        System.out.println("descuento:"+(precio-precioRebajado)/+precio*100); 
+        System.out.println("descuento:"+descuento); 
         inputValue.close();
     }
 }

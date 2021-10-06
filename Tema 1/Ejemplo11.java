@@ -7,18 +7,15 @@ public class Ejemplo11 {
         Scanner inputValue;
         inputValue = new Scanner(System.in);
         System.out.println("Introduce el valor 1");
-
         valor1 = inputValue.nextInt();
 
         System.out.println("Introduce el valor 2");
         valor2 = inputValue.nextInt();
         
-       
-        if (valor1>valor2){
-            System.out.println("Orden Ascendente:
-   }
         inputValue.close();
-         
+
+        
+
     }
 }
 

@@ -10,18 +10,13 @@ public class Ejemplo14 {
         nota = inputValue.nextInt();
 
         inputValue.close();
-        
-     if (nota <3){ 
-       System.out.println("Muy deficiente");
-     }
 
-    
-    
-    
-  
+      if (nota==0 && nota<3){
+      System.out.println("Muy deficiente");
+      }
     }
+  }
 }
-
 
       
 
