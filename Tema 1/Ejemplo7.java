@@ -1,4 +1,3 @@
-import java.security.KeyStore.ProtectionParameter;
 import java.util.Scanner;
 public class Ejemplo7 {
     public static void main (String argv[]) {
