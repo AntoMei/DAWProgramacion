@@ -9,14 +9,8 @@ public class Ejemplo14 {
 
       System.out.println("Introduce la nota");
       nota = inputValue.nextDouble();
-
+      
       inputValue.close();
-      if (nota ==0 && nota <3){
-        System.out.println("Muy deficiente");
-
-      if(nota == 3 && nota <5){
-          System.out.println("Insuficiente");
-        }
-      }
-    }
-  }
+      if (nota ==0);
+        System.out.println("Muy Deficiente"); 
+   
