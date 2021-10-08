@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Ejemplo13 {
-    public static void main (String argv[]) {
+	public static void main(String args[]){
         //Decalración de variables
         double x,y;  
         byte opcion;
