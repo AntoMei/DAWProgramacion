@@ -11,33 +11,26 @@ public class Ejemplo15 {
         inputValue.close();
         if (numero ==1){
             System.out.println("Uno");
-        }
-        if(numero==2){
+        }else if(numero==2){
             System.out.println("Dos");
-        }
-        if(numero==3){
+        }else if(numero==3){
             System.out.println("Tres");
-        }
-        if(numero==4){
+        }else if(numero==4){
             System.out.println("Cuatro");
-        }
-        if(numero==5){
+        }else if(numero==5){
             System.out.println("Cinco");
-        }
-        if(numero==6){
+        }else if(numero==6){
             System.out.println("Seis");
-        }
-        if(numero==7){
+        }else if(numero==7){
             System.out.println("Siete");
-        }
-        if(numero==8){
+        }else if(numero==8){
             System.out.println("Ocho");
-        } 
-        if(numero==9){
+        }else if(numero==9){
             System.out.println("Nueve");
-        }
-        if(numero==10){
+        }else  if(numero==10){
             System.out.println("Diez");
+        }else{
+            System.out.println("Incorrecto");
         }
     }
 }
