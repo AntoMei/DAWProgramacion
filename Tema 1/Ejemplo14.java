@@ -23,6 +23,8 @@ public class Ejemplo14 {
           System.out.println("Notable");
       }else if((nota>=9)&&(nota<=10)){
           System.out.println("Sobresaliente");
+      }else{
+          System.out.println("Incorrecta");
       }
     }
-  }
+}
