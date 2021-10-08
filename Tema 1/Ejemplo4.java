@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Ejemplo4 {
-    public static void main (String argv[]) {
+    public static void main(String args[]){
         float side;
         float squareArea;
        
