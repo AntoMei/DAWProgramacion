@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Ejemplo6 {
-    public static void main (String argv[]) {
+	public static void main(String args[]){
         float area;
         final double PI = 3.14159;
         float radio;
