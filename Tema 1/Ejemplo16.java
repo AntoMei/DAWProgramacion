@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Ejemplo16 {
-    public static void main (String argv[]) {
+	public static void main(String args[]){
        //Declaración de variables
         int suma;
         int resta;
