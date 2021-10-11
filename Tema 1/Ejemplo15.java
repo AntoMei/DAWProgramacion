@@ -40,6 +40,8 @@ public class Ejemplo15 {
             case 10:
                 System.out.println("Diez");
                 break;
+            default:
+                System.out.println("No es ningún múmero del 1 al 10");
         }
     }
 }
