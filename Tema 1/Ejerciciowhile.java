@@ -1,4 +1,3 @@
-import java.util.Scanner;
 public class Ejerciciowhile {
     public static void main(String args[]){
         int i;
