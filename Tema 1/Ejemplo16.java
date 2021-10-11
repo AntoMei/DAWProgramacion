@@ -7,15 +7,15 @@ public class Ejemplo16 {
         int multiplicacion;
         int division;
         byte opcion;
-        short x;
-        short y;
+        int x;
+        int y;
         Scanner inputValue = new Scanner(System.in);
 
         //Empieza el programa
         System.out.println("Introduce el numero x");
-        x = inputValue.nextShort();
+        x = inputValue.nextInt();
         System.out.println("Introduce el numero y");
-        y = inputValue.nextShort();
+        y = inputValue.nextInt();
         System.out.println("+ (1), - (2), * (3), / (4)");
         opcion = inputValue.nextByte();
         inputValue.close();

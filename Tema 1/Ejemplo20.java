@@ -15,11 +15,12 @@ public class Ejemplo20 {
            System.out.println("No hay descuento");
        }else{
        if((precio>=6)&&(precio<60)){
-           System.out.println("Se aplica un 5% de descuento:"+precio*0,05);
+           System.out.println("Se aplica un 5% de descuento:"+precio*0.05);
        }else{
            if(precio>=60){
-               System.out.println("Se aplica un 10% de descuento:"+precio*0,10);
+               System.out.println("Se aplica un 10% de descuento:"+precio*0.10);
            }
         }
     }
+}
 }
