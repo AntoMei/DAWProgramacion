@@ -14,10 +14,5 @@ public class Ejemplo18 {
        segundos = inputValue.nextInt();
        inputValue.close();
 
-       if (horas<24 && minutos<60 && segundos<60){
-           if (segundos<61 && segundos>=0){
-               System.out.println(horas+"horas"+minutos+"minutos"+(segundos+1)+"segundos");
-           }
-        }
-    }
-}
+        if (60==segundos){
+            
