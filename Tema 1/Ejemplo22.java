@@ -3,7 +3,7 @@ public class Ejemplo22 {
     public static void main(String args[]){
         //Declaración de variables
         int numero;
-        int positivos = 0;
+        int positivo;
 
         Scanner inputValue = new Scanner (System.in);
 
@@ -13,7 +13,9 @@ public class Ejemplo22 {
             numero = inputValue.nextInt();
          inputValue.close();
          if (numero>=0) {
-             positivos = positivos + 1;
+             positivo = positivo+1;
+ 
+
          }
         }
     }
