@@ -3,8 +3,6 @@ public class Ejemplo22 {
     public static void main(String args[]){
         //Declaración de variables
         int numero;
-        int positivo;
-
         Scanner inputValue = new Scanner (System.in);
 
          //Empieza el programa
@@ -13,7 +11,7 @@ public class Ejemplo22 {
             numero = inputValue.nextInt();
          inputValue.close();
          if (numero>=0) {
-             positivo = positivo+1;
+             System.out.println("Positivos");
  
 
          }
