@@ -7,7 +7,7 @@ public class Ejemplo27 {
     System.out.println("Introduza el valor de N");
     N = inputValue.nextInt();
     inputValue.close();
-    
+
     System.out.println(N/10000);
     System.out.println(N/1000);
     System.out.println(N/100);
