@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Ejemplo22 {
     public static void main(String args[]){
         //Declaración de variables
-        int numero;
+        int numero; contador; positivos;
         Scanner inputValue = new Scanner (System.in);
 
          //Empieza el programa
@@ -12,6 +12,7 @@ public class Ejemplo22 {
          inputValue.close();
          if (numero>=0) {
              System.out.println("Positivos");
+             
  
 
          }
