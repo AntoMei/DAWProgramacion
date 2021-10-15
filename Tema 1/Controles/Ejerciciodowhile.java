@@ -1,4 +1,5 @@
-public class Ejerciciowhile {
+package Controles;
+public class Ejerciciodowhile {
     public static void main(String args[]){
         int i;
 
@@ -9,6 +10,11 @@ public class Ejerciciowhile {
         while (i<10){
             System.out.println("Hola:"+i);
             i++;
+        i = 0;
+        do{
+            System.out.println("Hola:"+i);
+            i++;
+        }while (i<10);
         }
     }
 }
