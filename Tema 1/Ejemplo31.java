@@ -14,7 +14,7 @@ public class Ejemplo31 {
         anArray[8]=900;
         anArray[9]=1000;
 
-        for( int i = 0; i< anArray.length; i++){
+        for( int anA = 10; 10< anArray.length; 10++){
             System.out.println(anArray[10]);
         }
     }
