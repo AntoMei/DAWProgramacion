@@ -10,6 +10,6 @@ public class Ejemplo33 {
         inputValue.close();
 
         letras.charAt(numeroDNI % 23);
-        System.out.println("El numero de DNI es:"+numeroDNI+"-" +letras.charAt(numeroDNI%23));
+        System.out.println("El numero de DNI es:"+numeroDNI+ "-" +letras.charAt(numeroDNI%23));
     }
 }
