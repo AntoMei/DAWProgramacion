@@ -7,7 +7,7 @@ public class Ejemplo23 {
         Scanner inputValue = new Scanner (System.in);
 
         //Empieza el programa
-        System.out.println("Escribe los números");
+        System.out.println("Escribe los números y si desea terminar pulse 0");
         numero = inputValue.nextInt();
         while(numero !=0){
             if (numero >=0){
