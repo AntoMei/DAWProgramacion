@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MatesPruebas",
+            "request": "launch",
+            "mainClass": "Tema2.MatesPruebas",
+            "projectName": "Tema 1_b3904d06"
+        },
+        {
+            "type": "java",
             "name": "Launch Mates",
             "request": "launch",
             "mainClass": "Tema2.Mates",
