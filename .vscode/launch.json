@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ejemplo8",
+            "request": "launch",
+            "mainClass": "Ejemplo8",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
+            "name": "Launch MatesPruebas",
+            "request": "launch",
+            "mainClass": "Tema2.MatesPruebas",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
+            "name": "Launch MatesPruebas",
+            "request": "launch",
+            "mainClass": "MatesPruebas",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo3",
+            "request": "launch",
+            "mainClass": "Ejemplo3",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo5",
+            "request": "launch",
+            "mainClass": "Ejemplo5",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
