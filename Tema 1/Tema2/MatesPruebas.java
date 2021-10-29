@@ -1,5 +1,3 @@
-package Tema2;
-
 public class MatesPruebas {
     public static void main(String[] args) {
         System.out.println("Suma: 14 es igual a " +Mates.suma (7,7));

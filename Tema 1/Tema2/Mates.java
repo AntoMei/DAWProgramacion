@@ -1,4 +1,3 @@
-package Tema2;
 public class Mates {
     public static double suma(double x, double y){
         return x + y;
