@@ -16,8 +16,27 @@ public class Ejemplo38 {
                 case 'A':
                     vocalA++;
                     break;
-            
+                case 'E':
+                    vocalE++;
+                    break;
+                case 'I':
+                    vocalI++;
+                    break;
+                case 'O':
+                    vocalO++;
+                    break;
+                case 'U':
+                    vocalU++;
+                    break;
                 default:
                     break;
             }
+            lector.close();
         }
+        System.out.println("La vocal A aparece"+vocalA);
+        System.out.println("La vocal E aparece"+vocalE);
+        System.out.println("La vocal I aparece"+vocalI);
+        System.out.println("La vocal O aparece"+vocalO);
+        System.out.println("La vocal U aparece"+vocalU);
+    }
+}
