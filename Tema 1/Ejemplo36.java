@@ -16,6 +16,7 @@ public class Ejemplo36 {
                 maximo = numeros[i];
             }
         }
+        lector.close();
         System.out.println(maximo);
     }
 }
