@@ -24,6 +24,7 @@ public class Ejemplo37 {
             if (numeros[i]< minimo){
                 minimo = numeros[i];
             }
+            lector.close();
         }
         System.out.println("Maximo:"+maximo);
         System.out.println("Minimo:"+minimo);
