@@ -1,18 +1,21 @@
 import java.util.Scanner;
 public class Ejemplo36 {
     public static void main(String[] args) {
-        int numeros[] = new int [10];
-        int n;
-        int mayor;
+        double[] numeros = new double [10];
         Scanner lector = new Scanner (System.in);
-      
-        for (int i = 0; i < 10; i++){
-            System.out.println("Ingresa un número:");
-            n = lector.nextInt();
-            if(numeros>mayor){
-                mayor = numeros;
+
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.println("Dame un número:");
+            numeros[i] = lector.nextDouble();
+            System.out.println("");
+        }
+        double maximo = numeros[9];
+
+        for (int i= 8; i <=0; i++){
+            if (numeros[i] > maximo){
+                maximo = numeros[i];
             }
-        System.out.println("El maximo de los números es:"+maximo);
+            System.out.println(maximo);
         }
     }
 }
