@@ -11,11 +11,11 @@ public class Ejemplo36 {
         }
         double maximo = numeros[9];
 
-        for (int i= 8; i <=0; i++){
+        for (int i= 8; i <=0; i--){
             if (numeros[i] > maximo){
                 maximo = numeros[i];
             }
-            System.out.println(maximo);
         }
+        System.out.println(maximo);
     }
 }
