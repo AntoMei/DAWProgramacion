@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch E02",
+            "request": "launch",
+            "mainClass": "Controles.Control02.E02",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
+            "name": "Launch E01",
+            "request": "launch",
+            "mainClass": "Controles.Control02.E01",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
+            "name": "Launch P112Radares",
+            "request": "launch",
+            "mainClass": "P112Radares",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
+            "name": "Launch P369ContandoArena",
+            "request": "launch",
+            "mainClass": "P369ContandoArena",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
+            "name": "Launch HolaMundo",
+            "request": "launch",
+            "mainClass": "HolaMundo",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
             "name": "Launch Ejemplo38",
             "request": "launch",
             "mainClass": "Ejemplo38",
