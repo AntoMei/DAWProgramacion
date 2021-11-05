@@ -6,6 +6,7 @@ public class E06 {
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
         double catetoA; double catetoB; double hipotenusa;
+        double sumaCatetos;
 
 
         System.out.println("Ingrese cateto a:");
@@ -14,7 +15,10 @@ public class E06 {
         System.out.println("Ingrese cateto b:");
         catetoB = lector.nextDouble();
 
-        hipotenusa = Math.sqrt (Math.pow(catetoA, 2) + Math.pow(catetoB, 2));
+        catetoA = catetoA * catetoA;
+        catetoB = catetoB * catetoB;
+        sumaCatetos = catetoA + catetoB;
+        hipotenusa = Math.sqrt(sumaCatetos);
 
         System.out.println("La hipotenusa es"+hipotenusa);
         lector.close();
