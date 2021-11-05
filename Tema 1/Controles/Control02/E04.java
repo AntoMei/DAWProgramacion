@@ -5,9 +5,7 @@ import java.util.Scanner;
 public class E04 {
     public static void main(String[] args) {
         double longitud;
-        double longitud1;
-        double cm;
-        double in;
+        double longitud1;;
 
         Scanner lector = new Scanner(System.in);
 
