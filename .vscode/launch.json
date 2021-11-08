@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch EsDivisible",
+            "request": "launch",
+            "mainClass": "EsDivisible",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
+            "name": "Launch EsDivisiblePrueba",
+            "request": "launch",
+            "mainClass": "EsDivisiblePrueba",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
             "name": "Launch E09",
             "request": "launch",
             "mainClass": "Controles.Control02.E09",
