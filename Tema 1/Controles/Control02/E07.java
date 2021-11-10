@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class E07 {
     public static void main(String[] args) {
-        int horasActual; int horasCantidad;
+        int horasActual; int horasCantidad; int resultado;
 
         Scanner lector = new Scanner(System.in);
 
@@ -12,16 +12,9 @@ public class E07 {
         horasActual = lector.nextInt();
         System.out.println("Cantidad horas:");
         horasCantidad = lector.nextInt();
+        resultado = (horasActual + horasCantidad) / 12;
 
-        System.out.println("En 5 horas, el reloj marcara las 8");
-
-        System.out.println ("Hora actual:");
-        horasActual = lector.nextInt();
-        System.out.println("Cantidad horas:");
-        horasCantidad = lector.nextInt();
-
-        System.out.println("En 43 horas, el reloj marcara las 6");
-
+        System.out.print("En"+horasCantidad+",el reloj marcara las"+resultado);
         lector.close();
     }
 }
