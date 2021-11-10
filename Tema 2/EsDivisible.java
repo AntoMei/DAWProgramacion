@@ -1,16 +1,18 @@
 public class EsDivisible {
-    public static int esDivisible(int n, int m){
-        int resto;
-        resto = n%m;
-        return  resto;
-    }
-
-    public static void main(String[] args) {
-
-        if (esDivisible(4, 3) == 0){
-            System.out.println("Verdadero");
+    public static boolean esDivisible(int n, int m){
+        boolean resultado = false;
+        if ((n%m)==0){
+            resultado = true;
         }else{
-            System.out.println("Falso");
+            resultado = false;
         }
+        return resultado;
+    }
+    
+    public static void main(String[] args) {
+        boolean prueba1 = esDivisible(4, 2);
+        boolean prueba2 = esDivisible(4, 3);
+        boolean prueba3 = esDivisible(3, 4);
+        boolean prueba4 = esDivisible(2, 8);
     }
 }
