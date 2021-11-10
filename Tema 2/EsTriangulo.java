@@ -1,23 +1,15 @@
-import javax.xml.namespace.QName;
-
 public class EsTriangulo {
-    public static int esTriangulo(int lado1, int lado2, int lado3){
-        int resultado;
-        return resultado;
-
-    }
-
-    public static void main(String[] args) {
-        esTriangulo(12,1,1);
+    public static boolean esTriangulo(int a, int b, int c){
         boolean resultado = false;
-
-        if (lado1>(lado2 + lado3)){
+        if(a>(b+c) ||  b>(a+c) || c>(a+b)){
             resultado = false;
         }else{
-            if (lado1<(lado2+lado3)){
-                resultado = true;
-                System.out.println(resultado);
-            }
+            resultado = true;
         }
+        return resultado;
     }
-}      
+    public static void main(String[] args) {
+        boolean prueba1 = esTriangulo(5, 4, 2);
+        boolean prueba2 = esTriangulo(17, 3, 1);
+    }
+}
