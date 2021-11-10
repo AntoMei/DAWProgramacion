@@ -9,6 +9,5 @@ public class EsPositivos {
         return pos;
     }
     public static void main(String[] args) {
-        int prueba1 = positivos();
     }
 }
