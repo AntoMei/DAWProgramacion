@@ -3,7 +3,6 @@ public class EsPotencia {
         if (n == 0) return 1;
         if (n == 1) return x;
         if (n == 2) return x * x;
-        if (n %2 == 0) return potencia(potencia(x, n/2), 2);
         return x * (potencia(x, n-1));
     }
 
