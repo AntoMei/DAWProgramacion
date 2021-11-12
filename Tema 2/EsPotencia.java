@@ -4,6 +4,7 @@ public class EsPotencia {
         if (n == 1) return x;
         if (n == 2) return x * x;
         return x * (potencia(x, n-1));
+        
     }
 
     public static void main(String[] args) {
