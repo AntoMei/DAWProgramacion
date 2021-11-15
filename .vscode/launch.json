@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LetraDni",
+            "request": "launch",
+            "mainClass": "LetraDni",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
             "name": "Launch EsPositivos2",
             "request": "launch",
             "mainClass": "EsPositivos2",
