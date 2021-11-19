@@ -6,7 +6,7 @@ public class Ejemplo34 {
         char[] anArray = {'T','R','W','A','G','M','Y','F','P','D','X','B','N','J','Z','S','Q','V','H','L','C','K','E'};
         Scanner lector = new Scanner(System.in);
         
-        System.out.println("Dame los numero del NIE para verificar su letra:");
+        System.out.println("Introduce el NIE para verificar la letra:");
         numeroDNI = lector.nextLine();
 
         if(numeroDNI.length() == 8){
@@ -28,7 +28,7 @@ public class Ejemplo34 {
 
             System.out.println(numeroDNI + "" + anArray[numeroDNIconLetra%23]);
         } else {
-            System.out.println("Erorr! El numero de digitos no es correcto!");
+            System.out.println("Error, el número de dígitos es incorrecto");
         }
         lector.close();
     }    
