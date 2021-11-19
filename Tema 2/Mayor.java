@@ -10,13 +10,13 @@ public class Mayor {
         }
     }
     public static void main(String[] args) {
-        int edad;
+        int numero;
 
         Scanner lector = new Scanner(System.in);
         System.out.println("Introduzca su edad:");
-        edad = lector.nextInt();
+        numero = lector.nextInt();
         lector.close();
-        mayor(edad);
+        mayor(numero);
        
 
     }
