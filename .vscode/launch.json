@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Perro",
+            "request": "launch",
+            "mainClass": "Perro",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
+            "name": "Launch Elimina",
+            "request": "launch",
+            "mainClass": "Elimina",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
             "name": "Launch Ejemplo47",
             "request": "launch",
             "mainClass": "Ejemplo47",
