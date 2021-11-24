@@ -6,7 +6,7 @@ public class Duplicados {
             for (int j = 0; j < numeros.length; j++) {
                 if(numeros[i] == numeros[j]){
                     if(j!=i){
-                        System.out.println(i+" "+j);
+                        System.out.println(numeros[i]+" "+numeros[j]);
                     }
                 }
             }
