@@ -1,23 +1,21 @@
-import java.util.Arrays;
-
 public class Eliminar {
     public static void main(String[] args) {
-        int[] numeros = {1,2,3,4,5,6,7,8};
-        int[] numeros2 = null;
-        int eliminar = 2;
+        //int[] elementos = new int [10];
 
-        for (int i = 0; i < numeros.length-1; i++) {
-            if (numeros[i] == eliminar){
-                numeros2 = new int[numeros.length - 1];
-                for (int index = 0; index < i; index++) {
-                    numeros2[index] = numeros[index];
-                }
-                for (int j = i; j < numeros.length - 1; j++) {
-                    numeros2[j] = numeros[j+i];
-                }
-                break;
-            }
+        //Utilidades.rellenaArray(elementos, 1, 20);
+
+        int [] elementos = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        int indiceBorrar = 2;
+        int elementoBorrar = elementos[indiceBorrar];
+
+        for (int i = indiceBorrar +1; i < elementos.length; i++) {
+            elementos[i-1] = elementos[i];
+            
         }
-        System.out.println("Se elimina el núemero "+eliminar+Arrays.toString(numeros2));
+
+        elementos[elementos.length-1] = elementoBorrar;
+
     }
+       
 }

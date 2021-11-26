@@ -31,10 +31,10 @@ public class Utilidades {
 
 	}
 
-	public static void rellenaArray(int[] array, int min, int max) {
-		for (int i = 0; i < array.length; i++) {
+	public static void rellenaArray(int[] elementos, int min, int max) {
+		for (int i = 0; i < elementos.length; i++) {
 			int aleatorio = (int) (Math.random() * (max - min + 1) + min);
-			array[i] = aleatorio;
+			elementos[i] = aleatorio;
 		}
 	}
 	public static String[] dividirEnPalabras(String cadena){
