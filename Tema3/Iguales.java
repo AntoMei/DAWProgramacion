@@ -1,31 +1,23 @@
-import java.util.Arrays;
-
 public class Iguales {
-        public static String iguales(int[] original, int[] comparar) {
-            String iguales = "";
-            // Recorremos el original para buscar el elemento iésimo
-            for (int i = 0; i < original.length; i++) {
-                // Y ahora buscamos en el comparar el elemento iésimo
-                for (int j = 0; j < comparar.length; j++) {
-                    if (original[i] == comparar[j]) {
-                        iguales += original[i] + " ";
-                        break;
-                    }
+    public static void main(String[] args) {
+        int primero [] = {1,2,3,4,5,6,7,8,9,10};
+        int segundo [] = {1,2,3,4,5,6,7,8,9,10};
+        boolean iguales = true;
+       
+        if (primero.length != segundo.length){
+            System.out.println("No son iguales");
+        }else{
+            for (int i = 0; i < segundo.length; i++) {
+                if (primero[i] != segundo[i]){
+                    iguales = false;
+                    break;
                 }
             }
-            return iguales;
+        if (iguales){
+            System.out.println("Son iguales");
+        }else{
+            System.out.println("No son iguales");
         }
-    
-    public static void main(String[] args) {
-        int[] array1 = new int[10];
-        array1.clone();
-    
-        
-        Utilidades.rellenaArray(array1, -10, 10);
-    
-        // Antes de empezar a trabajar con el array lo imprimimos
-        System.out.println("Array : " + Arrays.toString(array1));
-    
-        System.out.println("Los elementos comunes son: " + iguales(array1, array1.clone()));
     }
+}
 }
