@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Eliminar2",
+            "request": "launch",
+            "mainClass": "Eliminar2",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
             "name": "Launch SumaIgual",
             "request": "launch",
             "mainClass": "SumaIgual",
