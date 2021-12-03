@@ -7,14 +7,12 @@ public class MoverCeros {
                 MoverCeroDerecha(vector, i);
         }
     }
-     
-     
+  
     private static void MoverCeroDerecha(int[] vector, int pos) {
     
-    for (int i = pos; i < vector.length - 1; i++) {
-        vector[i] = vector[i+1];
-        vector[i+1] = 0;
-
+        for (int i = pos; i < vector.length - 1; i++) {
+            vector[i] = vector[i+1];
+         vector[i+1] = 0;
+        }
     }
-}
 }
