@@ -11,7 +11,7 @@ public class MoverCeros {
      
     private static void MoverCeroDerecha(int[] vector, int pos) {
     
-    for (int i = pos; i < vector.length; i++){
+    for (int i = pos; i < vector.length - 1; i++) {
         vector[i] = vector[i+1];
         vector[i+1] = 0;
 
