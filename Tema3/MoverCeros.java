@@ -1,22 +1,20 @@
 public class MoverCeros {
     public static void main(String[] args) {
-        int [] numeros = {1,2,0,3,0,4};
+        int [] vector = {1,2,3,0,0,4,0,6,6};
 
-        for (int i = 0; i < numeros.length - 1; i++){
-            if(numeros[i] == 0){
-                int j = i + 1;
-                while(j < numeros.length){
-                    if (numeros[j] == 0){
-                        j++;
-                    }else{
-                        int aux = numeros[i];
-                        numeros[i] = numeros[j];
-                        numeros[j] = aux;
-                        j++;
-                        i++;
-                    }
-                }                     
-            }
+        for (int i = vector.length - 1; i >= 0; i--) {
+            if(vector[i]== 0){}
+                MoverCeroDerecha(vector, i);
         }
     }
+     
+     
+    private static void MoverCeroDerecha(int[] vector, int pos) {
+    
+    for (int i = pos; i < vector.length; i++){
+        vector[i] = vector[i+1];
+        vector[i+1] = 0;
+
+    }
+}
 }
