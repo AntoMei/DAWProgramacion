@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ValoresACero",
+            "request": "launch",
+            "mainClass": "ValoresACero",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
             "name": "Launch MoverCerosV2",
             "request": "launch",
             "mainClass": "MoverCerosV2",
