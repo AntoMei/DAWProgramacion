@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CompararIgnoreCase",
+            "request": "launch",
+            "mainClass": "CompararIgnoreCase",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
             "name": "Launch Comparar",
             "request": "launch",
             "mainClass": "Comparar",
