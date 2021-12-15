@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Longitud",
+            "request": "launch",
+            "mainClass": "Longitud",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
             "name": "Launch Substring",
             "request": "launch",
             "mainClass": "Substring",
