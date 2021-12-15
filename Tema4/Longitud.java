@@ -9,7 +9,7 @@ public class Longitud {
             if (palabras[i].length() == longitud){
                 contador++;
             }
-        System.out.println("La cadena contiene" + longitud);
+        System.out.println("La cadena contiene" + palabras+ "de"+ longitud);
         }
     }
 }
