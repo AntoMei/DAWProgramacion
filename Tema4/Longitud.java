@@ -3,11 +3,13 @@ public class Longitud {
         String cadena = Utilidades.leerCadena("Introduzca la cadena:");
         String palabras [] = Utilidades.dividirEnPalabras(cadena);
         int contador = 0;
-        int longitud = Utilidades.leerEntero("Contar palabras:");
+        int longitud = 0;
 
-        for (String palabra : palabras){
-            if (palabra.length() == longitud){
+        for (int i = 0; i < palabras.length; i++) {
+            if (palabras[i].length() == longitud){
                 contador++;
             }
-
+        System.out.println(contador + "" + longitud);
+        }
+    }
 }
