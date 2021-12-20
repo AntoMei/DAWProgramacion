@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Calculadora",
+            "request": "launch",
+            "mainClass": "Calculadora",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
             "name": "Launch Invertida",
             "request": "launch",
             "mainClass": "Invertida",
