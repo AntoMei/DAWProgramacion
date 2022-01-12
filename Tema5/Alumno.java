@@ -35,8 +35,6 @@ public class Alumno {
 
 
     public static void main(String[] args) {
-        Alumno a1, a2;
-        a2 = new Alumno(nombre);
-        Alumno.preguntarDuda();
+     
     }
 }
