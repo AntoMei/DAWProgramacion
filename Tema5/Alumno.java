@@ -1,9 +1,10 @@
 public class Alumno {
     
     private int id;
-    private static String nombre;
+    private String nombre;
     private int grupo;
     private static int numAlumnos = 0;
+    
 
     static void nuevoAlumno() {
         numAlumnos++;
@@ -33,10 +34,7 @@ public class Alumno {
     static void imprimirInformeAlumnos(){
     }
 
-
     public static void main(String[] args) {
-        Alumno a1, a2;
-        a2 = new Alumno(nombre);
-        Alumno.preguntarDuda();
+     
     }
 }
