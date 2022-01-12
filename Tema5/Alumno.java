@@ -1,7 +1,7 @@
 public class Alumno {
     
     private int id;
-    private static String nombre;
+    private String nombre;
     private int grupo;
     private static int numAlumnos = 0;
 
@@ -32,7 +32,7 @@ public class Alumno {
 
     static void imprimirInformeAlumnos(){
     }
-    
+
     public static void main(String[] args) {
      
     }
