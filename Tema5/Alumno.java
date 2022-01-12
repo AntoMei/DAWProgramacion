@@ -4,7 +4,6 @@ public class Alumno {
     private String nombre;
     private int grupo;
     private static int numAlumnos = 0;
-    
 
     static void nuevoAlumno() {
         numAlumnos++;
