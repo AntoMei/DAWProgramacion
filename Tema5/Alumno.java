@@ -4,7 +4,7 @@ public class Alumno {
     private String nombre;
     private int grupo;
     private static int numAlumnos = 0;
-
+    
     static void nuevoAlumno() {
         numAlumnos++;
     }
@@ -20,6 +20,8 @@ public class Alumno {
         nombre = juanito;
         grupo = cfsj;  
         nuevoAlumno();
+
+
     }
 
     static void preguntarDuda() {
@@ -32,6 +34,7 @@ public class Alumno {
 
     static void imprimirInformeAlumnos(){
     }
+
 
     public static void main(String[] args) {
      
