@@ -34,8 +34,7 @@ public class Alumno {
 
     static void imprimirInformeAlumnos(){
     }
-
-
+    
     public static void main(String[] args) {
      
     }
