@@ -5,8 +5,7 @@ public class Silla {
     public Silla() {
         //Aquí generar silla aleatoria
     }
-    public Silla(String color, int numeroPatas, boolean tieneRespaldo, int comodidad, String material,
-            Point ubicacion) {
+    public Silla(String color, int numeroPatas, boolean tieneRespaldo, int comodidad, String material, Point ubicacion) {
         this.color = color;
         this.numeroPatas = numeroPatas;
         this.tieneRespaldo = tieneRespaldo;
