@@ -46,11 +46,14 @@ public class TicketMachine
     }
     //4.Método showPrice
     public void showPrice(){
-        System.out.println("The price of the ticket is xyz cents. " + price);
+        System.out.printf("The price of the ticket is xyz cents. ", price);
     }
     //5.Generar constructor de la clase
-    public TicketMachine(){
-
+    public TicketMachine()
+    {
+        price = 0;
+        balance = 0;
+        total = 0;
     }
     //6.Método empty
     public void empty(){
