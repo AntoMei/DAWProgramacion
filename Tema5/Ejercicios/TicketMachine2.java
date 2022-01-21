@@ -29,6 +29,18 @@ public class TicketMachine2
         total = 0;
     }
 
+    //1.Método emptyMachine
+    public int emptyMachine(){
+        int totalAlmacenado = total;
+        total = 0;
+        return totalAlmacenado;  
+    }
+    //2.Método printTicket
+    public void printTicket(int amountToPay){
+        amountToPay = price - balance;
+        
+    }
+
     /**
      * @Return The price of a ticket.
      */
