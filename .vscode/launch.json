@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BookTest",
+            "request": "launch",
+            "mainClass": "Ejercicios.BookTest",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
             "name": "Launch TicketMachine2Test",
             "request": "launch",
             "mainClass": "Ejercicios.TicketMachine2Test",
