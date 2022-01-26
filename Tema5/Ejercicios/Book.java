@@ -65,14 +65,13 @@ class Book
 
     public void setRefNumber(String ref){
         ref = refNumber;
-        for (int i = 0; i < refNumber.length(); i++) {
-
-            if (refNumber.length() < 3) {
+            if (refNumber.length() > 3) {
+                System.out.println(refNumber);
+            }else{
                 System.out.println("Error");
             }
-        }  
-    }  
-
+        }
+    
     public void getRefNumber(){
         setRefNumber(refNumber);
     }
@@ -98,12 +97,4 @@ class Book
     public void prinDetails(){
         System.out.println("Detalles:\n");
     }
-
-    public void getRefNumber(String string) {
-    }
-
-
-
-
-
 }
