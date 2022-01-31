@@ -2,12 +2,15 @@ package Ejercicios;
 
 public class ClockDisplayTest {
     public static void main(String[] args) {
-        ClockDisplay reloj = new ClockDisplay();
-        reloj.setTime(12, 45);
-        reloj.timeTick();
-        reloj.getTime();
+        ClockDisplay reloj = new ClockDisplay(11,0,0);
+    
+        System.out.println(reloj.getTime());
 
-        NumberDisplay r1 = new NumberDisplay(300);
-        r1.increment();
+        for (int i = 0; i < 36063; i++) {
+            reloj.timeTick();
+        }
+
+        System.out.println(reloj.getTime());
+
     }
 }
