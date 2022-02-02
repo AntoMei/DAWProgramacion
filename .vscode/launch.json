@@ -4,7 +4,20 @@
     // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-      
+      {
+        "type": "java",
+        "name": "Launch AlumnoTest",
+        "request": "launch",
+        "mainClass": "AlumnoTest",
+        "projectName": "DAWProgramacion_a2bfc189"
+      },
+      {
+        "type": "java",
+        "name": "Launch MailTest",
+        "request": "launch",
+        "mainClass": "Ejercicios.MailTest",
+        "projectName": "DAWProgramacion_a2bfc189"
+      },
       {
         "type": "java",
         "name": "Launch ClockDisplayTest",
