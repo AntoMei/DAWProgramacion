@@ -17,6 +17,7 @@ public class Teclado {
   this.formato = "compacto";
   contador++;
   }
+
   public Teclado (String color, int numeroTeclas, String conectividad, String idioma, String formato){
     this.color = color;
     this.numeroTeclas = numeroTeclas;
@@ -24,6 +25,7 @@ public class Teclado {
     this.idioma = comprobarIdioma(idioma);
     this.formato = comprobarFormato(formato);
   }
+
   //Getters y Setters
   public String getColor() {
     return  color;
@@ -72,6 +74,7 @@ public class Teclado {
   public static void setContador(int contador) {
     Teclado.contador = contador;
   }
+
    //Metodo para comprobar la conectividad
     private static String comprobarConectividad(String conectividad){
       if (conectividad == "inalambrico" || conectividad == "cable") {
@@ -80,6 +83,7 @@ public class Teclado {
         return conectividad = "cable";
       }
     }
+
   //Método para comprobar el idioma
   private static String comprobarIdioma(String idioma) {
     if(idioma.length() ==2){
@@ -88,6 +92,7 @@ public class Teclado {
       return idioma;
     }
   }
+  
   //Metodo para comprobar el formato
     private static String comprobarFormato (String formato){
       if(formato == "compacto" || formato == "extendido"){
