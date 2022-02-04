@@ -6,6 +6,13 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch TecladoyOrdenador",
+        "request": "launch",
+        "mainClass": "TecladoyOrdenador",
+        "projectName": "DAWProgramacion_a2bfc189"
+      },
+      {
+        "type": "java",
         "name": "Launch AlumnoTest",
         "request": "launch",
         "mainClass": "AlumnoTest",
