@@ -52,10 +52,26 @@ public class MailClient
      * @param to The intended recipient.
      * @param message The text of the message to be sent.
      */
-    public void sendMailItem(String to, String subject,String message)
+    public void sendMailItem(String to, String asunto, String message )
     {
-        // to puede ser "Julio;Pepe;María" o "Jose"
-        MailItem item = new MailItem(user, to, subject, message);
-        server.post(item);
+
+        String[] usuarios = to.split(";");
+
+        for (int i = 0; i < usuarios.length; i++) {
+            MailItem item = new MailItem(user, usuarios[i], asunto, message);
+            server.post(item);
+        }
+    }
+
+    public void forwedLastMailItem(String forwardTo){
+        MailItem correoAnterior = server.getNextMailItem(user);
+        if(correoAnterior == null) {
+            System.out.println("No new mail.");
+        }
+        else {
+            correoAnterior.print();
+            correoAnterior.setTo(forwardTo);
+            server.post(correoAnterior);
+        }
     }
 }
