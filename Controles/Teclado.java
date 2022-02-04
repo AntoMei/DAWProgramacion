@@ -72,6 +72,14 @@ public class Teclado {
   public static void setContador(int contador) {
     Teclado.contador = contador;
   }
+   //Metodo para comprobar la conectividad
+    private static String comprobarConectividad(String conectividad){
+      if (conectividad == "inalambrico" || conectividad == "cable") {
+        return conectividad;
+      }else{
+        return conectividad = "cable";
+      }
+    }
   //Método para comprobar el idioma
   private static String comprobarIdioma(String idioma) {
     if(idioma.length() ==2){
@@ -80,19 +88,12 @@ public class Teclado {
       return idioma;
     }
   }
-
+  //Metodo para comprobar el formato
     private static String comprobarFormato (String formato){
       if(formato == "compacto" || formato == "extendido"){
         return formato;
       }else{
         return formato = "extendido";
-      }
-    }
-    private static String comprobarConectividad(String conectividad){
-      if (conectividad == "inalambrico" || conectividad == "cable") {
-        return conectividad;
-      }else{
-        return conectividad = "cable";
       }
     }
   }
