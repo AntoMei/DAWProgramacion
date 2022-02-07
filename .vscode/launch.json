@@ -9,6 +9,13 @@
         "name": "Launch TecladoyOrdenador",
         "request": "launch",
         "mainClass": "TecladoyOrdenador",
+        "projectName": "DAWProgramacion_4b96c5bf"
+      },
+      {
+        "type": "java",
+        "name": "Launch TecladoyOrdenador",
+        "request": "launch",
+        "mainClass": "TecladoyOrdenador",
         "projectName": "DAWProgramacion_a2bfc189"
       },
       {
