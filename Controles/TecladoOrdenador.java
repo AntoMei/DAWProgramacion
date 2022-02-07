@@ -1,4 +1,4 @@
-public class TecladoyOrdenador {
+public class TecladoOrdenador {
   public static void main(String[] args) {
     Teclado t1 = new Teclado();
     Teclado t2 = new Teclado("rojo", 100, "cable", "ES", "sobremesa");
