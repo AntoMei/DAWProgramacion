@@ -6,7 +6,7 @@ public class Teclado {
   private String conectividad;
   private String idioma;
   private String formato;
-  private static int numTecladosCreados = 0;
+  private static int contador = 0;
 
   //Constructores
   public Teclado(){
@@ -15,7 +15,7 @@ public class Teclado {
   this.conectividad ="cable";
   this.idioma = "ES";
   this.formato = "compacto";
-  contador();
+  contador++;
   }
 
   public Teclado (String color, int numeroTeclas, String conectividad, String idioma, String formato){
@@ -48,12 +48,12 @@ public class Teclado {
   }
 
   public static int getContador() {
-    return numTecladosCreados;
+    return contador;
   }
 
   //Método contador
   public static void contador(){
-    numTecladosCreados++;
+    contador++;
   }
   
   //Metodo para comprobar la conectividad
