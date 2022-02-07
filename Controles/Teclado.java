@@ -6,7 +6,7 @@ public class Teclado {
   private String conectividad;
   private String idioma;
   private String formato;
-  private static int contador = 0;
+  private static int numTecladosCreados = 0;
 
   //Constructores
   public Teclado(){
@@ -15,13 +15,13 @@ public class Teclado {
   this.conectividad ="cable";
   this.idioma = "ES";
   this.formato = "compacto";
-  contador++;
+  contador();
   }
 
   public Teclado (String color, int numeroTeclas, String conectividad, String idioma, String formato){
     this.color = color;
     this.numeroTeclas = numeroTeclas;
-    this.conectividad = Teclado.comprobarConectividad(conectividad);
+    this.conectividad = comprobarConectividad(conectividad);
     this.idioma = comprobarIdioma(idioma);
     this.formato = comprobarFormato(formato);
   }
@@ -31,51 +31,32 @@ public class Teclado {
     return  color;
   }
 
-  public void setColores(String color) {
-    this.color = color;
-  }
-
   public int getNumeroTeclas() {
     return numeroTeclas;
-  }
-
-  public void setNumeroTeclas(int numeroTeclas) {
-    this.numeroTeclas = numeroTeclas;
   }
 
   public String getConectividad() {
     return conectividad;
   }
 
-  public void setConectividades(String conectividad) {
-    this.conectividad = conectividad;
-  }
-
   public String getIdioma() {
     return idioma;
-  }
-
-  public void setIdioma(String idioma) {
-    this.idioma = idioma;
   }
 
   public String getFormato() {
     return formato;
   }
 
-  public void setFormato(String formato) {
-    this.formato = formato;
-  }
-
   public static int getContador() {
-    return contador;
+    return numTecladosCreados;
   }
 
-  public static void setContador(int contador) {
-    Teclado.contador = contador;
+  //Método contador
+  public static void contador(){
+    numTecladosCreados++;
   }
-
-   //Metodo para comprobar la conectividad
+  
+  //Metodo para comprobar la conectividad
     private static String comprobarConectividad(String conectividad){
       if (conectividad == "inalambrico" || conectividad == "cable") {
         return conectividad;
