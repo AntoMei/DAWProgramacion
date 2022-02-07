@@ -50,4 +50,9 @@ public class Ordenador {
       this.pcConectado = pcConectado;
     }
   }
+
+  //Método toString
+  public String toString(){
+    return formato + " - " + color + " - " + teclado;
+  }
 }

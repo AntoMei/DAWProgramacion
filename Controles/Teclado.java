@@ -82,4 +82,9 @@ public class Teclado {
         return formato = "extendido";
       }
     }
+  
+  //Método tostring
+  public String toString(){
+    return color + " - " + numeroTeclas + " - " + formato;
   }
+}
