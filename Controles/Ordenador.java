@@ -3,6 +3,7 @@ public class Ordenador {
   private String formato;
   private String color;
   private Teclado teclado;
+  private Ordenador pcConectado = null;
 
   //Contructores
   public Ordenador(){
@@ -22,16 +23,8 @@ public class Ordenador {
     return formato;
   }
 
-  public void setFormato(String formato) {
-    this.formato = formato;
-  }
-
   public String getColor() {
     return color;
-  }
-
-  public void setColor(String color) {
-    this.color = color;
   }
 
   public Teclado getTeclado() {
@@ -48,6 +41,13 @@ public class Ordenador {
     return formato;
     }else{
       return formato = "sobremesa";
+    }
+  }
+
+  //Método conectar a otro ordenador
+  public void conectar(Ordenador pcConectado){
+    if (pcConectado != null){
+      this.pcConectado = pcConectado;
     }
   }
 }
