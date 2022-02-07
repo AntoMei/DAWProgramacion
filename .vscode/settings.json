@@ -1,13 +1,13 @@
 {
     "java.project.sourcePaths": [
+      "Tema5",
+      "Tema4",
+      "Tema3",
       "Tema 2",
       "Tema 1/Tema2",
       "Tema 1",
-      "Aceptaelreto",
-      "Tema3",
       "Objetos",
-      "Tema4",
-      "Tema5",
+      "Aceptaelreto",
       "Controles"
     ]
 }
