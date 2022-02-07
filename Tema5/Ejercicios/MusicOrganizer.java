@@ -61,4 +61,15 @@ public class MusicOrganizer
             files.remove(index);
         }
     }
+
+    //Método checkIndex
+    public void checkIndex(int parametro){
+        if () {
+            
+        }
+    }
+
+    //Método isValidIndex
+    public void isValidIndex(int parametro){
+    }
 }
