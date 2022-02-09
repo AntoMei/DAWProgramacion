@@ -117,8 +117,8 @@ public class MusicOrganizer
  
     //Método getMatching
     public void getMatching(String match){
-        for (int i = 0; i < match.length(); i++) {
-        }
+        resultado = new ArrayList<>(); 
+        res.add("fkojewfowe");
     }
 
     //Método findFirst
@@ -126,7 +126,10 @@ public class MusicOrganizer
         boolean buscador;
         int indice = 0;
         int tamaño = files.size();
-        while ( ) {
+        while (!buscador && indice < tamaño) {
+            
+                
+            }
             
         }
     }
