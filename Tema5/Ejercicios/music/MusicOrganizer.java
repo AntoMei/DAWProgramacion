@@ -87,12 +87,12 @@ public class MusicOrganizer
 
     //Método listAllFiles
     public void listAllFiles(){
-        for (String fileName: files) {
-            System.out.println(fileName);
+        for (String filename: files) {
+            System.out.println(filename);
         }
     }
 
-    //Método listMaching
+    //Método listMaching //Con un boolean o un contador
     public void listMatching(String match){
         boolean resultado = false;
         for (String filename : files) {
@@ -108,15 +108,26 @@ public class MusicOrganizer
             
     //Método playMatching
     public void playMatching(String match){
-        
+        for (String filename : files) {
+            if (filename.contains(match)) {
+                player.playSample(filename);
+            }  
+        }
     }
-    
+ 
     //Método getMatching
     public void getMatching(String match){
-
+        for (int i = 0; i < match.length(); i++) {
+        }
     }
 
     //Método findFirst
     public void findFirst(String searchString){
-
+        boolean buscador;
+        int indice = 0;
+        int tamaño = files.size();
+        while ( ) {
+            
+        }
     }
+}
