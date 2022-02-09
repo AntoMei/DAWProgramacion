@@ -84,4 +84,39 @@ public class MusicOrganizer
     {
         player.stop();
     }
-}
+
+    //Método listAllFiles
+    public void listAllFiles(){
+        for (String fileName: files) {
+            System.out.println(fileName);
+        }
+    }
+
+    //Método listMaching
+    public void listMatching(String match){
+        boolean resultado = false;
+        for (String filename : files) {
+            if (filename.contains(match)) {
+                System.out.println(filename);   
+                resultado = true;
+            }
+        }
+        if (!resultado) {
+            System.out.println("Error");
+        }
+    }
+            
+    //Método playMatching
+    public void playMatching(String match){
+        
+    }
+    
+    //Método getMatching
+    public void getMatching(String match){
+
+    }
+
+    //Método findFirst
+    public void findFirst(String searchString){
+
+    }
