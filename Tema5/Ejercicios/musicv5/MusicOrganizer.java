@@ -172,4 +172,14 @@ public class MusicOrganizer
             addTrack(track);
         }
     }
+
+    //Método findInTitle
+    public void findInTitle(String searchString){
+        for(Track track : tracks) {
+            if(track.getTitle().contains(searchString))
+            {
+                System.out.println(track.getDetails());
+            }
+        }
+    }
 }
