@@ -87,57 +87,65 @@ public class MusicOrganizer
 
     //Método listAllFiles
     public void listAllFiles(){
-        for (String filename: files) {
-            System.out.println(filename);
+        for (String cancion: files) {
+            System.out.println(cancion);
         }
     }
 
     //Método listMaching //Con un boolean o un contador
     public void listMatching(String match){
         boolean resultado = false;
-        for (String filename : files) {
-            if (filename.contains(match)) {
-                System.out.println(filename);   
-                resultado = true;
-            }
+
+        ArrayList<String> canciones = getMatching(match);
+
+        for (String cancion : canciones) {
+            System.out.println(cancion);   
+            resultado = true;
         }
+    
         if (!resultado) {
-            System.out.println("Error");
+            System.out.println("No se ha encontrado ninguna canción");
         }
     }
             
     //Método playMatching
     public void playMatching(String match){
-        for (String filename : files) {
-            if (filename.contains(match)) {
-                player.playSample(filename);
+
+        ArrayList<String> canciones = getMatching(match);
+
+        for (String cancion : canciones) {
+                System.out.println(cancion);
+                player.playSample(cancion);
             }  
         }
-    }
  
     //Método getMatching
-    public void getMatching(String match){
-        resultado = new ArrayList<>(); 
-        resultado.add(match);
-    }
+    public ArrayList<String> getMatching(String match){
+        ArrayList<String> resultado = new ArrayList<>();
+
+        for (String cancion: files) {
+            if (cancion.contains(match)) {
+                resultado.add(cancion);  
+            } 
+        }
+            return resultado;
+        }
 
     //Método findFirst
-    public void findFirst(String searchString){
-        boolean buscador;
+    public int findFirst(String match){
         int indice = 0;
-        int tamaño = files.size();
-        while (!buscador && indice < tamaño) {
-            String filename = files.get(indice); 
-            if (filename.contains(searchString)) {
-                buscador = true;
-            }else{
-                indice++;
-            }
-                
-            }
-                
-            }
-            
+        int resultado = -1;
+
+        while (indice < files.size()) {
+
+           if(files.get(indice).contains(match)){
+               resultado = indice;
+               break;
+           }else{
+               indice++;
+           }
         }
+
+        return resultado;
     }
 }
