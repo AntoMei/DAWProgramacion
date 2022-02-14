@@ -58,6 +58,8 @@ public class MusicOrganizer
         if(indexValid(index)) {
             Track track = tracks.get(index);
             player.startPlaying(track.getFilename());
+            //Incremenntar el conatdor de reproducciones de una pista cada vez que se reproduzca
+            track.incPlayCount();
             System.out.println("Now playing: " + track.getArtist() + " - " + track.getTitle());
         }
     }
@@ -175,10 +177,17 @@ public class MusicOrganizer
 
     //Método findInTitle
     public void findInTitle(String searchString){
-        for(Track track : tracks) {
-            if(track.getTitle().contains(searchString))
-            {
-                System.out.println(track.getDetails());
+
+        // for (Track cancion : tracks){
+            //String titulo = cancion.getTitle();
+            //if(titulo.contains(searchString)){
+                //System.out.println(titulo);
+            // }
+        // }
+
+        for(Track cancion : tracks) {
+            if(cancion.getTitle().contains(searchString)){
+                System.out.println(cancion.getDetails());
             }
         }
     }

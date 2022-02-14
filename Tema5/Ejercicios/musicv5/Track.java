@@ -17,6 +17,8 @@ public class Track
     private String filename;
     //Campo playCount
     private int playCount;
+    //Campo album
+    private String album;
     
     /**
      * Constructor for objects of class Track.
@@ -27,7 +29,6 @@ public class Track
     public Track(String artist, String title, String filename)
     {
         setDetails(artist, title, filename);
-        this.playCount = 0;
     }
     
     /**
@@ -90,8 +91,22 @@ public class Track
         this.filename = filename;
     }
     
-    //Método playCount
-    public void incrementarPlayCount(){
+    //Método set resetPlayCount
+    public void resetPlayCount(){
+        playCount = 0;
+    }
+    //Método set incplayCount
+    public void incPlayCount(){
         playCount++;
+    }
+
+    //Método fijar album set consAlbum
+    public void setAlbum(String album){
+        this.album = album;
+    }
+
+    //Métogo get consutar album
+    public String getAlbum(){
+        return this.album;
     }
 }
