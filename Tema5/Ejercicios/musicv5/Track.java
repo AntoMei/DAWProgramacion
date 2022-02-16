@@ -26,6 +26,7 @@ public class Track
      * @param title The track's title.
      * @param filename The track file. 
      */
+    //@param para documentar los atributos.
     public Track(String artist, String title, String filename)
     {
         setDetails(artist, title, filename);
@@ -69,14 +70,7 @@ public class Track
         return filename;
     }
         
-    /**
-     * Return details of the track: artist, title and file name.
-     * @return The track's details.
-     */
-    public String getDetails()
-    {
-        return artist + ": " + title + "  (file: " + filename + ")";
-    }
+   //Se borrá el método Details
     
     /**
      * Set details of the track.
@@ -107,6 +101,15 @@ public class Track
 
     //Métogo get consutar album
     public String getAlbum(){
-        return this.album;
+        return album;
+    }
+
+    @Override //Decorador. //Override sobreescribe el método
+    //Método toString
+    public String toString(){
+        return artist + ": " + title + 
+        "  (file: " + filename + ")" + 
+        " " + album;
+
     }
 }

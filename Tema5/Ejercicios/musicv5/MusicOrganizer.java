@@ -18,6 +18,9 @@ public class MusicOrganizer
     // A reader that can read music files and load them as tracks.
     private TrackReader reader;
 
+    //Creamos un nuevo atributo
+    private String lastTrackPlaying;
+
     /**
      * Create a MusicOrganizer
      */
@@ -53,13 +56,21 @@ public class MusicOrganizer
      * Play a track in the collection.
      * @param index The index of the track to be played.
      */
+
+    //Para detener una pista para que la otra se pueda inicializar.
     public void playTrack(int index)
     {
         if(indexValid(index)) {
             Track track = tracks.get(index);
+
+            if (!track.getFilename().equals(this.lastTrackPlaying)) {
+                player.stop();
+            }
+
             player.startPlaying(track.getFilename());
             //Incremenntar el conatdor de reproducciones de una pista cada vez que se reproduzca
             track.incPlayCount();
+            this.lastTrackPlaying = track.getFilename();
             System.out.println("Now playing: " + track.getArtist() + " - " + track.getTitle());
         }
     }
@@ -81,7 +92,7 @@ public class MusicOrganizer
     {
         System.out.print("Track " + index + ": ");
         Track track = tracks.get(index);
-        System.out.println(track.getDetails());
+        System.out.println(track);
     }
     
     /**
@@ -92,7 +103,7 @@ public class MusicOrganizer
         System.out.println("Track listing: ");
 
         for(Track track : tracks) {
-            System.out.println(track.getDetails());
+            System.out.println(track);
         }
         System.out.println();
     }
@@ -105,7 +116,7 @@ public class MusicOrganizer
     {
         for(Track track : tracks) {
             if(track.getArtist().contains(artist)) {
-                System.out.println(track.getDetails());
+                System.out.println(track);
             }
         }
     }
@@ -187,7 +198,7 @@ public class MusicOrganizer
 
         for(Track cancion : tracks) {
             if(cancion.getTitle().contains(searchString)){
-                System.out.println(cancion.getDetails());
+                System.out.println(cancion);
             }
         }
     }
