@@ -1,0 +1,5 @@
+Crea un programa en el que crees un array de 1000 enteros
+en las posiciones pares, han de aparecer los multiples de 3 en las 
+pares, empezando por el 3 y los multiples de 7 en las impares, empezando por el 7
+despues de rellenarlo imprimer el contenido del array, de las posiciones que 
+son multiplos de 13.

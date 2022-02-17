@@ -6,6 +6,27 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch EjercicioArray",
+        "request": "launch",
+        "mainClass": "EjercicioArray",
+        "projectName": "DAWProgramacion_4b96c5bf"
+      },
+      {
+        "type": "java",
+        "name": "Launch MusicOrganizerTest",
+        "request": "launch",
+        "mainClass": "Ejercicios.music.MusicOrganizerTest",
+        "projectName": "DAWProgramacion_4b96c5bf"
+      },
+      {
+        "type": "java",
+        "name": "Launch MusicOrganizerTest",
+        "request": "launch",
+        "mainClass": "Ejercicios.MusicOrganizerTest",
+        "projectName": "DAWProgramacion_4b96c5bf"
+      },
+      {
+        "type": "java",
         "name": "Launch TecladoOrdenador",
         "request": "launch",
         "mainClass": "TecladoOrdenador",

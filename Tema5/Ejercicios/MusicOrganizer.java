@@ -45,7 +45,7 @@ public class MusicOrganizer
      */
     public void listFile(int index)
     {
-        if(index >= 0 && index < files.size()) {
+        if(isValidIndex(index)) {
             String filename = files.get(index);
             System.out.println(filename);
         }
@@ -57,19 +57,26 @@ public class MusicOrganizer
      */
     public void removeFile(int index)
     {
-        if(index >= 0 && index < files.size()) {
+        if(isValidIndex(index)) {
             files.remove(index);
+        }else{
+            System.out.println();
         }
     }
 
     //Método checkIndex
     public void checkIndex(int parametro){
-        if () {
-            
+        if ((parametro < 0) || (parametro >= files.size())) {
+            System.out.println("Error, el rango válido de valores esta entre 0 y " + (files.size()-1));  
         }
     }
 
     //Método isValidIndex
-    public void isValidIndex(int parametro){
+    public boolean isValidIndex(int parametro){
+        if ((parametro < 0) || (parametro >= files.size())) {
+            return false;
+        }else{
+            return true;
+        }
     }
 }

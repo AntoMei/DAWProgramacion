@@ -1,0 +1,29 @@
+music-organizer-v2
+Abre el proyecto music-organizer-v2
+1. Usando el bucle  for-each  implementa el método  listAllFiles  que
+imprima el nombre de todas las canciones.
+2. Añade   el   método  listMatching(String match)  que   liste   sólo
+aquellas   canciones   que   contengan   la   cadena  match.   Si   no
+encuentra ninguna, debe mostrar un mensaje indicándolo.
+3. Añade   el   método  playMatching(String match)  que,   además   de
+imprimir el nombre de la canción, reproduzca un ejemplo de
+la misma usando el método playSample.
+4. Avanzado.   Crea   un   método  getMatching(String match)  que
+devuelva una colección (ArrayList) con todas las canciones que
+contengan la cadena match.
+5. Modifica  listMatching  y  playMatching  para   que   usen   el   nuevo
+método getMatching. 
+6. Escribe un método  findFirst(String searchString)  que devuelva el
+índice   de   la   primera   canción   que   coincida   con   la   cadena
+buscada. Si no la encuentra, debe devolver -1. El bucle debéis
+realizarlo con un while sin usar iteradores.
+Nota. Comprueba todos los métodos creados en el banco de objetos. Comprueba
+también que todos los métodos funcionan cuando la colección está vacía.
+For-each. El bucle for-each tiene la siguiente estructura
+for (tipoElemento elemento : colección)
+cuerpo del bucle.
+}
+Por ejemplo,
+for (String filename : files){
+System.out.println(filename);
+}

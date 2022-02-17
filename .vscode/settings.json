@@ -9,5 +9,9 @@
       "Objetos",
       "Aceptaelreto",
       "Controles"
+    ],
+    "java.project.referencedLibraries": [
+      "lib/**/*.jar",
+      "/home/alumno/Desktop/jl1.0.1.jar"
     ]
 }
