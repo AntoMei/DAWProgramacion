@@ -8,7 +8,8 @@
       "Tema 1",
       "Objetos",
       "Aceptaelreto",
-      "Controles"
+      "Controles",
+      "SolucionE2"
     ],
     "java.project.referencedLibraries": [
       "lib/**/*.jar",
