@@ -11,7 +11,6 @@ public class UsuarioTest {
       Media m2 = new Media(432, "imagen.jpg", "imagen", MediaType.IMAGE, u2);
       Media m3 = new Media(487, "video.mp4", "video", MediaType.VIDEO, u3);
 
-      
       System.out.println(u1.getEmail());
     }  
 }

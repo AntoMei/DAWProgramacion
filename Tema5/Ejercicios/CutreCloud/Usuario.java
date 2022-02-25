@@ -66,5 +66,11 @@ public class Usuario {
 
     public void setPassword(String password) {
         this.password = password;
-    } 
+    }
+
+    //Método eliminar un usuario por email.
+
+    //Método eliminar sus medias. Crear un método en media, que busque los email de los usuarios.
+
+    //Método eliminar usuarios de un dominio.
 } 
