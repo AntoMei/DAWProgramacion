@@ -1,19 +1,19 @@
 package Ejercicios.CutreCloud;
 
-import java.util.ArrayList;
-
 public class Media {
 
     private int id;
     private String nombre;
     private String contenido;
-    private ArrayList<String> tipo = new ArrayList<>(); 
+    private MediaType tipo;
+    private Usuario usuario_id;
 
-    public Media(int id, String nombre, String contenido, ArrayList<String> tipo) {
+    public Media(int id, String nombre, String contenido, MediaType tipo, Usuario usuario_id) {
         this.id = id;
         this.nombre = nombre;
         this.contenido = contenido;
         this.tipo = tipo;
+        this.usuario_id = usuario_id;
     }
 
     public int getId() {
@@ -40,11 +40,19 @@ public class Media {
         this.contenido = contenido;
     }
 
-    public ArrayList<String> getTipo() {
+    public MediaType getTipo() {
         return tipo;
     }
 
-    public void setTipo(ArrayList<String> tipo) {
+    public void setTipo(MediaType tipo) {
         this.tipo = tipo;
-    }   
-}
+    }
+
+    public Usuario getUsuario_id() {
+        return usuario_id;
+    }
+
+    public void setUsuario_id(Usuario usuario_id) {
+        this.usuario_id = usuario_id;
+    }
+}   
