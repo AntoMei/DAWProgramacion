@@ -70,7 +70,20 @@ public class Usuario {
 
     //Método eliminar un usuario por email.
 
+    public void eliminarUnUsuario(String email){
+        for (Usuario item : list) {
+            if (item.getEmail().equals(email)) {
+                list.remove(item);
+                break;
+            }
+        }
+    }
+
     //Método eliminar sus medias. Crear un método en media, que busque los email de los usuarios.
 
     //Método eliminar usuarios de un dominio.
+
+    public void eliminarUsuario(){
+        
+    }
 } 
