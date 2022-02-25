@@ -1,5 +1,7 @@
 package Ejercicios.CutreCloud;
 
+import org.w3c.dom.NameList;
+
 public class Media {
 
     private int id;
