@@ -6,6 +6,13 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch ParserXML",
+        "request": "launch",
+        "mainClass": "Ejercicios.CutreCloud.ParserXML",
+        "projectName": "DAWProgramacion_4b96c5bf"
+      },
+      {
+        "type": "java",
         "name": "Launch UsuarioTest",
         "request": "launch",
         "mainClass": "Ejercicios.CutreCloud.UsuarioTest",

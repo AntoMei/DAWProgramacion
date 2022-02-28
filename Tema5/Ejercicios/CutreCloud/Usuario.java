@@ -86,4 +86,17 @@ public class Usuario {
     public void eliminarUsuario(){
         
     }
-} 
+
+    //Método generateXML.
+    public String generateXML(){
+        String resultado = "";
+
+        resultado += "<usuario>" + "\n";
+        resultado += "<id>" + +id+ "</id>" + "\n";
+        resultado += "<email>" +email+ "/email" + "\n";
+        resultado += "<password>" + password+ "</password>" + "\n";
+        resultado += "/usuario>";
+
+        return resultado;
+    }
+}

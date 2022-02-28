@@ -101,4 +101,18 @@ public class Media {
             }
         }
     }
+
+    //Método generateXML.
+    public String generateXML(){
+        String resultado = "";
+
+        resultado += "<media>" + "\n";
+        resultado += "<id>" +id+ "</id>" + "\n";
+        resultado += "<nombre>" +nombre+ "</nombre>" + "\n";
+        resultado += "<contenido>" +contenido+ "</contenido>" + "\n";
+        resultado += "<tipo>" +tipo+ "</tipo>" + "\n";
+        resultado += "<usuario>" +usuario+ "</usuario>";
+
+        return resultado;
+    }
 }   
