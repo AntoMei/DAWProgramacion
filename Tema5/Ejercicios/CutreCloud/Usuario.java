@@ -1,8 +1,9 @@
 package Ejercicios.CutreCloud;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class Usuario {
+public class Usuario implements ParserXML{
 
     private int id;
     private String email;
@@ -69,22 +70,33 @@ public class Usuario {
     }
 
     //Método eliminar un usuario por email.
+    public static boolean eliminarUnUsuario(String email){
 
-    public void eliminarUnUsuario(String email){
-        for (Usuario item : list) {
-            if (item.getEmail().equals(email)) {
-                list.remove(item);
+        boolean resultado = false;
+        
+        for (Usuario person : list) {
+            if (person.email.equals(email)) {
+                list.remove(person);
+                resultado = true;
                 break;
             }
         }
+        return resultado;
     }
 
-    //Método eliminar sus medias. Crear un método en media, que busque los email de los usuarios.
-
     //Método eliminar usuarios de un dominio.
+    public static void eliminarUsuario(String domain){
 
-    public void eliminarUsuario(){
-        
+        Iterator<Usuario> it = list.iterator();
+
+        while (it.hasNext()) {
+            Usuario user = it.next();
+
+            if (user.email.endsWith(domain)) {
+                list.remove(user);
+                
+            }  
+        }
     }
 
     //Método generateXML.

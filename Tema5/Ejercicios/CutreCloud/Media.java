@@ -3,7 +3,7 @@ package Ejercicios.CutreCloud;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class Media {
+public class Media implements ParserXML{
     private int id;
     private String nombre;
     private String contenido;
@@ -80,24 +80,44 @@ public class Media {
     }
 
     //Método eliminar un media por nombre fichero.
-    public void eliminarUnMedia(String nombre){
+    public static boolean eliminarUnMedia(String nombre){
 
-        for (Media item : list) {
-          if (item.getNombre().equals(nombre)) {
-              list.remove(item);
-              break;  
+        boolean resultado = false;
+
+        for (Media mediaItem : list) {
+          if (mediaItem.nombre.equals(nombre)) {
+              list.remove(mediaItem);
+              resultado = true;
+              break;
           }
         }
+        return resultado;
     }
 
     //Método eliminar todos media de un tipo concreto.
+    public static void eliminarTodosMedias(MediaType tipo){
 
-    public void eliminarTodosMedias(MediaType tipo){
-        Iterator<Media> i = list.iterator();
-        while(i.hasNext()){
-            Media media = i.next();
-            if (media.getTipo().equals(tipo)) {
-                i.remove();
+        Iterator<Media> iterator = list.iterator();
+
+        while(iterator.hasNext()){
+            Media elemento = iterator.next();
+
+            if (elemento.tipo.equals(tipo)) {
+                iterator.remove();
+            }
+        }
+    }
+
+    //Método eliminar todos sus media por email y usuario.
+    public static void eliminarTodoPorUsuario(int id){
+
+        Iterator<Media> it = list.iterator();
+
+        while (it.hasNext()) {
+            Media media = it.next();
+
+            if (media.usuario.getId() == id) {
+                it.remove();
             }
         }
     }
@@ -111,7 +131,9 @@ public class Media {
         resultado += "<nombre>" +nombre+ "</nombre>" + "\n";
         resultado += "<contenido>" +contenido+ "</contenido>" + "\n";
         resultado += "<tipo>" +tipo+ "</tipo>" + "\n";
-        resultado += "<usuario>" +usuario+ "</usuario>";
+        resultado += usuario.generateXML() + "\n";
+        resultado += "<usuario>" +usuario+ "</usuario>" + "\n";
+        resultado += "</media";
 
         return resultado;
     }

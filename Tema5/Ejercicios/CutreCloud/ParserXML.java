@@ -1,5 +1,5 @@
 package Ejercicios.CutreCloud;
 
-interface ParserXML {
+public interface ParserXML {
     public String generateXML();
 }
