@@ -1,12 +1,17 @@
 package Ejercicios.Club;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 /**
  * Store details of club memberships.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Club {
+public class Club 
+{
+    private ArrayList<Membership> list = new ArrayList<>();
     // Define any necessary fields here ...
     
     /**
@@ -24,6 +29,8 @@ public class Club {
      */
     public void join(Membership member)
     {
+        list.add(member);
+    
     }
 
     /**
@@ -32,6 +39,34 @@ public class Club {
      */
     public int numberOfMembers()
     {
-        return 0;
+        return list.size();
+    }
+
+    //Método joinedInMonth
+    public int joinedInMonth(int month){
+
+        int contador = 0;
+
+        if (month > 1 && month < 12) {
+            for (Membership itemMember : list){
+                if (itemMember.getMonth() == month) {
+                    contador++;
+                }
+            }
+        }else{
+            System.out.println("Error");
+        }
+        return contador;
+    }
+    //Método purge
+    public void purge(int month){
+        Iterator<Membership> it = list.iterator();
+    
+        while (it.hasNext()) {
+            Membership member = it.next();
+            if (member.getMonth() == month) {
+                it.remove();  
+            }  
+        }
     }
 }

@@ -8,7 +8,8 @@ package Ejercicios.Club;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ClubDemo {
+public class ClubDemo 
+{
     // instance variables - replace the example below with your own
     private Club club;
 
