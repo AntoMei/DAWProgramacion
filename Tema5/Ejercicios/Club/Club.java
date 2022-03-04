@@ -11,8 +11,8 @@ import java.util.Iterator;
  */
 public class Club 
 {
-    private ArrayList<Membership> list = new ArrayList<>();
     // Define any necessary fields here ...
+    private ArrayList<Membership> members;
     
     /**
      * Constructor for objects of class Club
@@ -20,6 +20,7 @@ public class Club
     public Club()
     {
         // Initialise any fields here ...
+        members = new ArrayList<Membership>();
         
     }
 
@@ -29,7 +30,7 @@ public class Club
      */
     public void join(Membership member)
     {
-        list.add(member);
+        members.add(member);
     
     }
 
@@ -39,34 +40,45 @@ public class Club
      */
     public int numberOfMembers()
     {
-        return list.size();
+        return members.size();
     }
 
     //Método joinedInMonth
+    /**
+    * Determinar el número de miembros que se han unido en
+    * el mes indicado
+    * @param month El mes que nos interesa
+    * @return El número de miembros que se han unido ese mes
+    */
     public int joinedInMonth(int month){
-
         int contador = 0;
 
-        if (month > 1 && month < 12) {
-            for (Membership itemMember : list){
+        if (month < 1 && month > 12) {
+            System.out.println("Mes incorrecto");
+        }else{}
+            for (Membership itemMember : members){
                 if (itemMember.getMonth() == month) {
                     contador++;
                 }
             }
-        }else{
-            System.out.println("Error");
-        }
         return contador;
     }
+
     //Método purge
-    public void purge(int month){
-        Iterator<Membership> it = list.iterator();
-    
+    public int purge(int month){
+        int eliminados = 0;
+
+        Iterator<Membership> it = members.iterator();
+
         while (it.hasNext()) {
             Membership member = it.next();
+
             if (member.getMonth() == month) {
                 it.remove();  
+                eliminados++;
             }  
         }
+        
+        return eliminados;
     }
 }

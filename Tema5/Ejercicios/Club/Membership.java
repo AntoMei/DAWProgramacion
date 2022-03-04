@@ -1,7 +1,5 @@
 package Ejercicios.Club;
 
-import java.util.ArrayList;
-
 /**
  * Store details of a club membership.
  * 
