@@ -2,6 +2,9 @@ package Ejercicios.CutreCloud;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 
 public class Usuario implements ParserXML{
 
@@ -110,5 +113,24 @@ public class Usuario implements ParserXML{
         resultado += "/usuario>";
 
         return resultado;
+    }
+        public void writeXML(){
+
+        try{
+            String ruta = "//home/alumno/Desktop/DAWProgramacion/Tema5/Ejercicios/CutreCloud";
+
+            File file = new File(ruta);
+
+            if (!file.exists()) {
+            file.createNewFile();
+            }
+
+            FileWriter fw = new FileWriter(file);
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write(generateXML());
+            bw.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }

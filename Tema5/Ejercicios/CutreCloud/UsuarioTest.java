@@ -14,5 +14,6 @@ public class UsuarioTest {
       System.out.println(u2.generateXML());
       System.out.println(m1.generateXML());
       System.out.println(m2.generateXML());
+
     }  
 }
