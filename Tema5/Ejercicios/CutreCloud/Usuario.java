@@ -108,16 +108,16 @@ public class Usuario implements ParserXML{
 
         resultado += "<usuario>" + "\n";
         resultado += "<id>" + +id+ "</id>" + "\n";
-        resultado += "<email>" +email+ "/email" + "\n";
+        resultado += "<email>" +email+ "</email>" + "\n";
         resultado += "<password>" + password+ "</password>" + "\n";
-        resultado += "/usuario>";
+        resultado += "</usuario>";
 
         return resultado;
     }
         public void writeXML(){
 
         try{
-            String ruta = "//home/alumno/Desktop/DAWProgramacion/Tema5/Ejercicios/CutreCloud";
+            String ruta = "/home/alumno/Desktop/DAWProgramacion/Tema5/Ejercicios/CutreCloud/UsuarioXML/USuarioXML " + id + ".xml";
 
             File file = new File(ruta);
 

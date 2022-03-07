@@ -143,10 +143,11 @@ public class Media implements ParserXML{
 
     public void writeXML(){
 
+
         try{
-            String ruta = "//home/alumno/Desktop/DAWProgramacion/Tema5/Ejercicios/CutreCloud";
+            String ruta = "/home/alumno/Desktop/DAWProgramacion/Tema5/Ejercicios/CutreCloud/MediaXML/MediaXML " + id + ".xml";
        
-            File file = new File(ruta);
+            File file = new File(ruta); 
 
             if (!file.exists()) {
             file.createNewFile();
@@ -156,6 +157,7 @@ public class Media implements ParserXML{
             BufferedWriter bw = new BufferedWriter(fw);
             bw.write(generateXML());
             bw.close();
+
         }catch (Exception e){
             e.printStackTrace();
         }
