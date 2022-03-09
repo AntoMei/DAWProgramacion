@@ -117,7 +117,7 @@ public class Usuario implements ParserXML{
         public void writeXML(){
 
         try{
-            String ruta = "/home/alumno/Desktop/DAWProgramacion/Tema5/Ejercicios/CutreCloud/UsuarioXML/USuarioXML " + id + ".xml";
+            String ruta = "Tema5/Ejercicios/CutreCloud/Usuarios/Usuario " + id + ".xml";
 
             File file = new File(ruta);
 
