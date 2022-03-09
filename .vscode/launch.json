@@ -6,6 +6,20 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch TestXML",
+        "request": "launch",
+        "mainClass": "Ejercicios.CutreCloud.TestXML",
+        "projectName": "DAWProgramacion_4b96c5bf"
+      },
+      {
+        "type": "java",
+        "name": "Launch TestXstream",
+        "request": "launch",
+        "mainClass": "Ejercicios.CutreCloud.TestXstream",
+        "projectName": "DAWProgramacion_4b96c5bf"
+      },
+      {
+        "type": "java",
         "name": "Launch UsuarioInput",
         "request": "launch",
         "mainClass": "Ejercicios.CutreCloud.UsuarioInput",
