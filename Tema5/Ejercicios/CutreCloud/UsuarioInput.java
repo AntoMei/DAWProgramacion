@@ -23,7 +23,7 @@ public class UsuarioInput {
         teclado.close();
     }
 
-    private static void mensajeBienvenida(){
+    public static void mensajeBienvenida(){
     System.out.println("------BIENVENIDO A CUTRECLOUD------");
         System.out.println("1. Para añadir nuevos Usuarios pulse 1 : ");
         System.out.println("2. Para salir pulse 0 : ");
@@ -31,7 +31,7 @@ public class UsuarioInput {
         opcion = teclado.nextInt();
     }
 
-    private static void crearUsuario(){
+    public static void crearUsuario(){
         if (opcion == 1) {
            
             System.out.println("Introduzca el email del Usuario : ");
