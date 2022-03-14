@@ -15,8 +15,9 @@ public class Forma {
   }
 
   public void imprimir(){
+    System.out.println("---------------------");
     System.out.println("Color: " + color);
-    System.out.printf("Centro:(%f,%f)/n", centro.x, centro.y);
+    System.out.printf("Centro:(%d,%d)\n", centro.x, centro.y);
     System.out.println("Nombre: " + nombre);
   }
 

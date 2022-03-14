@@ -17,24 +17,16 @@ public class Rectangulo extends Forma {
     System.out.println("Lado menor: " + ladoMenor);
   }
 
+  public double getPerimetro(){
+    return 2 * ladoMayor + 2 * ladoMenor;
+  }
+
   public double getArea(){
     return ladoMayor * ladoMenor;
   }
-
-  public double calcularPerimetro(){
-    return 2 * ladoMayor + 2 * ladoMenor;
-
-  }
   
-  public void cambiarTamaño(double factor){
-    if (factor > 1) {
-      System.out.println(ladoMayor*factor);
-      System.out.println(ladoMenor*factor);
-    }else{
-      if (factor < 1 ) {
-        System.out.println(ladoMayor%factor);
-        System.out.println(ladoMenor%factor);
-      }
-    }
+  public void escalar(double factor){
+    this.ladoMayor *= factor;
+    this.ladoMenor *= factor;
   }
 }
