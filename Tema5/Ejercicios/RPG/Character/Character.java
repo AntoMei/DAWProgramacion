@@ -7,24 +7,26 @@ import Ejercicios.RPG.Character.Stat.Dexterity;
 import Ejercicios.RPG.Character.Stat.Intelligence;
 import Ejercicios.RPG.Character.Stat.Strength;
 
-public class Character {
+public class Character implements IDamageable{
     private final String name;
     private final Race race;
     private final Job job;
+    private double health;
 
     private final Strength strength;
     private final Dexterity dexterity;
     private final Constitution constitution;
     private final Intelligence intelligence;
 
-    public Character(final String name, final Race race, final Job job, final int strength, final int dexterity, final int constitution, final int intelligence){
+    public Character(final String name, final Race race, final Job job, final int strength, final int dexterity, final int constitution, final int intelligence, double health){
         this.name = name;
         this.race = race;
         this.job = job;
         this.strength = new Strength(strength);
         this.dexterity = new Dexterity(dexterity);
         this.constitution = new Constitution(constitution);
-        this.intelligence = new Intelligence(intelligence);  
+        this.intelligence = new Intelligence(intelligence); 
+        this.health = health;
     }
 
     public String getName(){
@@ -55,5 +57,35 @@ public class Character {
     public String toString() {
         return "Character [constitution=" + constitution + ", dexterity=" + dexterity + ", intelligence=" + intelligence
                 + ", job=" + job + ", name=" + name + ", race=" + race + ", strength=" + strength + "]";
+    }
+
+    @Override
+    public double maxHealth() {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public double health() {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public boolean isDead() {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+    @Override
+    public void receivesDamage(double amount) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void heals(double amount) {
+        // TODO Auto-generated method stub
+        
     }
 }
