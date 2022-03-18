@@ -61,31 +61,32 @@ public class Character implements IDamageable{
 
     @Override
     public double maxHealth() {
-        // TODO Auto-generated method stub
-        return 0;
+        return (constitution.getValue() + race.modifier(constitution) + job.modifier(constitution)) * 25;
     }
 
     @Override
     public double health() {
-        // TODO Auto-generated method stub
-        return 0;
+        return health;
     }
 
     @Override
     public boolean isDead() {
-        // TODO Auto-generated method stub
-        return false;
+        if (health < 0) {
+            return true;
+        }else{
+            return false;
+        }
     }
 
     @Override
     public void receivesDamage(double amount) {
-        // TODO Auto-generated method stub
-        
+        health = health - amount;
+        System.out.println("Kram received" + amount + ". Health: " + health);
     }
 
     @Override
     public void heals(double amount) {
-        // TODO Auto-generated method stub
-        
+        health = health + amount; 
+        System.out.println("Kram healed " + amount + ". Health: " + health); 
     }
 }
