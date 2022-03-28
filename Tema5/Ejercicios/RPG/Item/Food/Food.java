@@ -5,9 +5,5 @@ public abstract class Food implements IConsumable{
 
     public Food(int power) {
         this.power = power;
-    }
-
-    @Override
-    public void consumedBY(Character character) {
     } 
 }

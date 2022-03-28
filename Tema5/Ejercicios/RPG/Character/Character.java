@@ -6,6 +6,7 @@ import Ejercicios.RPG.Character.Stat.Constitution;
 import Ejercicios.RPG.Character.Stat.Dexterity;
 import Ejercicios.RPG.Character.Stat.Intelligence;
 import Ejercicios.RPG.Character.Stat.Strength;
+import Ejercicios.RPG.Item.Food.IConsumable;
 
 public class Character implements IDamageable{
     private final String name;
@@ -26,7 +27,6 @@ public class Character implements IDamageable{
         this.dexterity = new Dexterity(dexterity);
         this.constitution = new Constitution(constitution);
         this.intelligence = new Intelligence(intelligence); 
-        this.health = health;
     }
 
     public String getName(){
@@ -86,7 +86,19 @@ public class Character implements IDamageable{
 
     @Override
     public void heals(double amount) {
-        health = health + amount; 
-        System.out.println("Kram healed " + amount + ". Health: " + health); 
+        double curacionCompleta = 0;
+        if(health < 250){
+            curacionCompleta = health + amount;
+
+            if(curacionCompleta > 250){
+                health = 250;
+            }else{
+                health = curacionCompleta;
+            }
+        }
+    }
+
+    public void consumes(IConsumable consumable){
+        consumable.consumedBY(this);
     }
 }

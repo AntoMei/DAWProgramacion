@@ -21,5 +21,10 @@ public class Orc extends Race{
         }
     
         return resultado;
+    }
+
+    @Override
+    public String toString() {
+        return "Orc []";
     }    
 }
