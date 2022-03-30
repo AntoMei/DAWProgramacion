@@ -22,9 +22,4 @@ public class Elf extends Race{
     
         return resultado;
     }
-
-    @Override
-    public String toString() {
-        return "Elf []";
-    }    
 }

@@ -9,6 +9,6 @@ public class Apple extends Food {
     }
 
     @Override
-    public void consumedBY(Character character) {   
-    }  
+    public void consumedBY(Character character) { 
+    }
 }

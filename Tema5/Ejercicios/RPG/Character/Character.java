@@ -6,7 +6,6 @@ import Ejercicios.RPG.Character.Stat.Constitution;
 import Ejercicios.RPG.Character.Stat.Dexterity;
 import Ejercicios.RPG.Character.Stat.Intelligence;
 import Ejercicios.RPG.Character.Stat.Strength;
-import Ejercicios.RPG.Item.Food.IConsumable;
 
 public class Character implements IDamageable{
     private final String name;
@@ -14,12 +13,12 @@ public class Character implements IDamageable{
     private final Job job;
     private double health;
 
-    private final Strength strength;
-    private final Dexterity dexterity;
-    private final Constitution constitution;
-    private final Intelligence intelligence;
+    private Strength strength;
+    private Dexterity dexterity;
+    private Constitution constitution;
+    private Intelligence intelligence;
 
-    public Character(final String name, final Race race, final Job job, final int strength, final int dexterity, final int constitution, final int intelligence, double health){
+    public Character(String name, Race race, Job job, int strength, int dexterity, int constitution, int intelligence){
         this.name = name;
         this.race = race;
         this.job = job;
@@ -27,6 +26,7 @@ public class Character implements IDamageable{
         this.dexterity = new Dexterity(dexterity);
         this.constitution = new Constitution(constitution);
         this.intelligence = new Intelligence(intelligence); 
+        this.health = maxHealth();
     }
 
     public String getName(){
@@ -71,34 +71,23 @@ public class Character implements IDamageable{
 
     @Override
     public boolean isDead() {
-        if (health < 0) {
-            return true;
-        }else{
-            return false;
-        }
+        return health() <= 0;
     }
 
     @Override
     public void receivesDamage(double amount) {
-        health = health - amount;
-        System.out.println("Kram received" + amount + ". Health: " + health);
+        health -= amount;
+        if (health < 0) {
+            health = 0;
+        }  
     }
 
     @Override
     public void heals(double amount) {
-        double curacionCompleta = 0;
-        if(health < 250){
-            curacionCompleta = health + amount;
-
-            if(curacionCompleta > 250){
-                health = 250;
-            }else{
-                health = curacionCompleta;
-            }
+        health += amount;
+        
+        if (health > maxHealth()) {
+            health = maxHealth(); 
         }
     }
-
-    public void consumes(IConsumable consumable){
-        consumable.consumedBY(this);
-    }
-}
+} 
