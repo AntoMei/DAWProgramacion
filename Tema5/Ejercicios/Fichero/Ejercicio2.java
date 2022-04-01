@@ -2,22 +2,53 @@ package Ejercicios.Fichero;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.util.Locale;
 import java.util.Scanner;
-public class Ejercicio1 {
+public class Ejercicio2 {
 
-   private static void imprimirFichero(File e, int id) {
+    private static void imprimirFichero(File e, int id) {
 
-        //No imprime los ficheros/directorios ocultos
+        String permisos = "";
+        DateFormat formatter;
+        formatter =  DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.MEDIUM, Locale.getDefault());
+
+        if (e.isDirectory() != false) {
+            permisos = "d";
+        }else{
+            permisos = "-";
+        }
+
+        if (e.canRead() != false) {
+            permisos += "r";
+        }else{
+            permisos += "-";
+        }
+
+        if (e.canWrite() != false) {
+            permisos += "w";
+        }else{
+            permisos += '-';
+        }
+
+        if (e.canExecute() != false) {
+            permisos += "x";
+        }else{
+            permisos += '-';
+        }
+
+       //No imprime los ficheros/directorios ocultos
 
        if (!e.isHidden()) {
-           if (e.isFile()) {
-               System.out.println(id + ".- " + e.getName() + " " + e.length());
-           }
-           if (e.isDirectory()){
-               System.out.println(id + ".- " + e.getName() + " <Directorio>");
-           }
-       }
-   }
+        if (e.isFile()) {
+            System.out.println(id + ".- " + permisos + "\t" +  String.format("%-15d", e.length()) + formatter.format(e.lastModified()) + "\t" + e.getName());
+        }
+        if (e.isDirectory()){
+            System.out.println(id + ".- " + permisos + "\t" +  String.format("%-15d", e.length()) + formatter.format(e.lastModified()) + "\t" + e.getName());
+        }
+    }
+    }
+
    private static void imprimirDirectorio(File f) throws IOException {
 
         int contador = 1;
@@ -43,7 +74,7 @@ public class Ejercicio1 {
             System.out.println("No existe el directorio");
         }
     }
-    
+
     private static int leerOpcion() {
         Scanner teclado = new Scanner(System.in);
         String entradaUsuario = "";
