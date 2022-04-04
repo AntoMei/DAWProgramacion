@@ -1,4 +1,4 @@
- public static void root(){
+public static void root(){
         
         File fichero = File.listRoots()[0]; 
         File contenido[] = fichero.listFiles();

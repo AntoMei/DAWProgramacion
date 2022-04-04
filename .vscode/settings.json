@@ -9,7 +9,8 @@
       "Objetos",
       "Aceptaelreto",
       "Controles",
-      "SolucionE2"
+      "SolucionE2",
+      "Tema6"
     ],
     "java.project.referencedLibraries": [
       "lib/**/*.jar",
