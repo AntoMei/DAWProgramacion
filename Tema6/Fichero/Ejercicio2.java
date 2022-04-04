@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.util.Locale;
 import java.util.Scanner;
+
 public class Ejercicio2 {
 
     private static void imprimirFichero(File e, int id) {
