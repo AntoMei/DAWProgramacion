@@ -14,6 +14,10 @@ public class TransformaImagen {
         // Control de existencia del fichero y control de la extensión .bmp (sacar
 
         // mensajes de error)
+        if (fEnt.exists()== false) {
+            System.out.println("El fichero no existe");
+            
+        }
 
     }
 
@@ -21,6 +25,14 @@ public class TransformaImagen {
 
         // Transformar a negativo y guardar como *_n.bmp
 
+        FileInputStream fImg_in = new FileInputStream(f);
+        FileOutputStream fImg_ou = new FileOutputStream(f + "_n.bmp");
+
+        byte[] buffer = new byte[54];
+        int n = fImg_in.read(buffer);
+        
+
+ 
     }
 
     public void transformaOscuro() throws IOException {
