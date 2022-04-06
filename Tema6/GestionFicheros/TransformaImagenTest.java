@@ -7,7 +7,7 @@ public class TransformaImagenTest {
 
     public static void main(String[] args) throws IOException {
 
-        File image = new File("Tema6/GestioFicheros/penyagolosa.bmp");
+        File image = new File("Tema6/GestionFicheros/penyagolosa.bmp");
         TransformaImagen ti = new TransformaImagen(image);
         try {
             ti.transformaNegativo();
