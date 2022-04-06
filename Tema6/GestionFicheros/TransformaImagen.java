@@ -2,16 +2,8 @@ package GestionFicheros;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileReader;
 import java.io.IOException;
-
-import javax.imageio.ImageIO;
-
-import java.awt.Graphics2D;
-import java.awt.*;
-import java.awt.image.BufferedImage;
 
 public class TransformaImagen {
     File f = null;
@@ -26,7 +18,7 @@ public class TransformaImagen {
 
     public void transformaNegativo() throws IOException {
         FileInputStream reader = new FileInputStream(this.f);
-        File fOut = new File("./fichero_n.bmp");
+        File fOut = new File("Tema6/GestionFicheros/penyagolosa_n.bmp");
         FileOutputStream writer = new FileOutputStream(fOut);
 
         byte[] cabecera = new byte[54];
@@ -48,7 +40,7 @@ public class TransformaImagen {
 
     public void transformaOscuro() throws IOException {
         FileInputStream reader = new FileInputStream(this.f);
-        File fOut = new File("./fichero_o.bmp");
+        File fOut = new File("Tema6/GestionFicheros/penyagolosa_o.bmp");
         FileOutputStream writer = new FileOutputStream(fOut);
 
         byte[] cabecera = new byte[54];
@@ -69,7 +61,7 @@ public class TransformaImagen {
     }
     public void transformaNegroBlanco() throws IOException {
         FileInputStream reader = new FileInputStream(this.f);
-        File fOut = new File("./fichero_nb.bmp");
+        File fOut = new File("Tema6/GestionFicheros/penyagolosa_bn.bmp");
         FileOutputStream writer = new FileOutputStream(fOut);
 
         byte[] cabecera = new byte[54];
