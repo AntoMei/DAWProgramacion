@@ -6,6 +6,13 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch LeePrimos",
+        "request": "launch",
+        "mainClass": "Primos.LeePrimos",
+        "projectName": "DAWProgramacion_4b96c5bf"
+      },
+      {
+        "type": "java",
         "name": "Launch Primos",
         "request": "launch",
         "mainClass": "Primos.Primos",
