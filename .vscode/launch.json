@@ -6,6 +6,13 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch Primos",
+        "request": "launch",
+        "mainClass": "Primos.Primos",
+        "projectName": "DAWProgramacion_4b96c5bf"
+      },
+      {
+        "type": "java",
         "name": "Launch TransformaImagenTest",
         "request": "launch",
         "mainClass": "GestionFicheros.TransformaImagenTest",
