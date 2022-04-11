@@ -7,17 +7,14 @@ import java.util.Scanner;
 public class ContarPalabra {
     public static void main(String[] args) {
 
-        Scanner lector = new Scanner(System.in);
-
-        System.out.println("Escribe el nombre del fichero: ");
-        lector.nextLine();
-        System.out.println("Escribe la palabra a buscar: ");
-        lector.nextLine();
-        lector.close();
-         
         try {
+            Scanner lector = new Scanner(System.in);
+
+            System.out.println("Escribe el nombre del fichero: ");
+            lector.nextLine();
+            System.out.println("Escribe la palabra a buscar: ");
             BufferedReader br = new BufferedReader(new FileReader("Tema6/ContarPalabra/fichero.txt"));
-            String palabra = "hola";
+            String palabra = lector.nextLine();
             String linea = "";
             int i = 0;
             int repeticiones = 0;
@@ -29,6 +26,7 @@ public class ContarPalabra {
                     repeticiones++;
                 }
             }
+            lector.close();
             br.close();
 
             System.out.println("La palabra " + palabra + " aparece " + repeticiones + " veces en el fichero.");
