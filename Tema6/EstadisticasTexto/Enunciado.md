@@ -4,7 +4,7 @@ Crea un programa que analice un fichero de texto plano y que muestre las siguien
 -Numero de palabras.
 -Numero de lineas.
 -Porcentaje de vocales. (Por ejemplo la a y la á son vocales).
--Porcentajes de consonantes.
+-Porcentaje de consonantes.
 -Porcentaje de espacios.
 -Porcentaje de tabuladores.
 
