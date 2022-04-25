@@ -20,39 +20,39 @@ public class Mezcla {
 
         //Para imprimir los dos archivos en uno final.
 
-        PrintWriter pw = new PrintWriter("Tema6/Mezcla/ficheroMezcla");
+        PrintWriter ficheroMezcla = new PrintWriter("Tema6/Mezcla/ficheroMezcla");
 
         //Para los dos archivos.
 
-        BufferedReader br1 = new BufferedReader(new FileReader("Tema6/Mezcla/fichero1.txt"));
-        BufferedReader br2 = new BufferedReader(new FileReader("Tema6/Mezcla/fichero2.txt"));
+        BufferedReader lectorPrimerFichero = new BufferedReader(new FileReader("Tema6/Mezcla/fichero1.txt"));
+        BufferedReader lectorSegundoFichero = new BufferedReader(new FileReader("Tema6/Mezcla/fichero2.txt"));
 
-        String line1 = br1.readLine();
-        String line2 = br2.readLine();
+        String lineaPrimerFichero = lectorPrimerFichero.readLine();
+        String lineaSegundoFichero = lectorSegundoFichero.readLine();
 
-        //Para copiar las lineas del fichero1 y fichero2 al fichero3
+        //Para copiar las lineas del fichero1 y fichero2 al fichero
 
-        while (line1 != null || line2 != null) {
+        while (lineaPrimerFichero != null || lineaSegundoFichero != null) {
 
-            if (line1 != null) {
-                pw.println(line1);
-                line1 = br1.readLine();
+            if (lineaPrimerFichero != null) {
+                ficheroMezcla.println(lineaPrimerFichero);
+                lineaPrimerFichero = lectorPrimerFichero.readLine();
             }
             
-            if (line2 != null) {
-                pw.println(line2);
-                line2 = br2.readLine();
+            if (lineaSegundoFichero != null) {
+                ficheroMezcla.println(lineaSegundoFichero);
+                lineaSegundoFichero = lectorSegundoFichero.readLine();
                 
             }
         }
 
-        pw.flush();
+        ficheroMezcla.flush();
 
         //Cerrar br y pw
         lector.close();
-        br1.close();
-        br2.close();
-        pw.close();
+        lectorPrimerFichero.close();
+        lectorSegundoFichero.close();
+        ficheroMezcla.close();
 
         System.out.println("Se ha creado correctamente el ficheroMezcla.");
         
