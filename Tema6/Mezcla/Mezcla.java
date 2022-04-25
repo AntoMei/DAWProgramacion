@@ -46,6 +46,8 @@ public class Mezcla {
             }
         }
 
+        //Vacía el escritorio.
+        
         ficheroMezcla.flush();
 
         //Cerrar br y pw
