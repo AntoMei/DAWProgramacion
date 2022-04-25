@@ -12,7 +12,7 @@ public class Primos {
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter("Tema6/Primos/primos.dat"));
 
-            for (int i = 1; i < 501; i++) {
+            for (int i = 1; i < 500; i++) {
                 if (esPrimo(i)) {
                     bw.write(String.valueOf(i) + "\n");
                 }
