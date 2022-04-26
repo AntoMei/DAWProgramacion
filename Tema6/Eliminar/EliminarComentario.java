@@ -9,14 +9,14 @@ public class EliminarComentario {
     public static void main(String[] args) throws IOException {
 
       FileReader fichero = new FileReader("Tema 6/EliminarComentarios/fichero.txt");
-        BufferedReader lector = new BufferedReader(fichero);
+        BufferedReader br = new BufferedReader(fichero);
         PrintWriter escritor = new PrintWriter("Tema 6/EliminarComentarios/ficheroResultado.txt");
 
         String linea;
         String lineaSinEspacios;
         String inicio;
 
-        while((linea = lector.readLine())!= null){
+        while((linea = br.readLine())!= null){
 
             lineaSinEspacios = linea.replaceAll("\\s","");
 
@@ -40,6 +40,6 @@ public class EliminarComentario {
 
         escritor.close();
         fichero.close();
-        lector.close();
+        br.close();
     }
 }
