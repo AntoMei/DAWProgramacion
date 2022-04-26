@@ -8,9 +8,11 @@ import java.io.PrintWriter;
 public class EliminarComentario {
     public static void main(String[] args) throws IOException {
 
-      FileReader fichero = new FileReader("Tema 6/EliminarComentarios/fichero.txt");
+      FileReader fichero = new FileReader("Tema6/Eliminar/Programa.java");
+
         BufferedReader br = new BufferedReader(fichero);
-        PrintWriter escritor = new PrintWriter("Tema 6/EliminarComentarios/ficheroResultado.txt");
+        
+        PrintWriter escritor = new PrintWriter("Tema 6/Eliminar/ProgramaResultado.java");
 
         String linea;
         String lineaSinEspacios;
