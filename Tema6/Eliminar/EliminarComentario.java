@@ -8,37 +8,38 @@ import java.io.PrintWriter;
 public class EliminarComentario {
     public static void main(String[] args) throws IOException {
 
-        BufferedReader br = new BufferedReader(new FileReader("Tema6/Eliminar/fichero.txt"));
-        PrintWriter pw = new PrintWriter(("Tema6/Eliminar/fichero2.txt"));
+      FileReader archivo = new FileReader("Tema 6/EliminarComentarios/fichero.txt");
+        BufferedReader lector = new BufferedReader(archivo);
+        PrintWriter escritor = new PrintWriter("Tema 6/EliminarComentarios/ficheroResultado.txt");
 
-        String linea = "";
-        String liniaSinEspacios;
+        String linea;
+        String lineaSinEspacios;
         String inicio;
 
-        while ((linea = br.readLine()) != null) {
-                liniaSinEspacios = linea.replaceAll("\\s", "");
+        while((linea = lector.readLine())!= null){
 
-                if (liniaSinEspacios.length() > 0) {
+            lineaSinEspacios = linea.replaceAll("\\s","");
 
-                  if (liniaSinEspacios.length() == 1){
-                    pw.println(linea);
-                  }else{
-                      inicio = liniaSinEspacios.substring(0, 2);
+            if(lineaSinEspacios.length() > 0){
 
-                      if (inicio.equals("//")) {
-                      }else{
-                        pw.println(linea);
-                      }
+                if(lineaSinEspacios.length() == 1){
+                    escritor.println(linea);
+                }else{
+                    inicio = lineaSinEspacios.substring(0, 2);
+            
+                    if(inicio.equals("//")){
+                    }else{
+                        escritor.println(linea);
                     }
-                  }else{
-                    pw.println("");
-                  }
                 }
-              }
+            }else{
+                escritor.println("");
             }
-          }
+            
         }
-      }
+
+        escritor.close();
+        archivo.close();
+        lector.close();
     }
-  }
 }

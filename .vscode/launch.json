@@ -6,6 +6,13 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch EliminarComentario",
+        "request": "launch",
+        "mainClass": "Eliminar.EliminarComentario",
+        "projectName": "DAWProgramacion_a2bfc189"
+      },
+      {
+        "type": "java",
         "name": "Launch Primos",
         "request": "launch",
         "mainClass": "Primos.Primos",
