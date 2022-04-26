@@ -8,8 +8,8 @@ import java.io.PrintWriter;
 public class EliminarComentario {
     public static void main(String[] args) throws IOException {
 
-      FileReader archivo = new FileReader("Tema 6/EliminarComentarios/fichero.txt");
-        BufferedReader lector = new BufferedReader(archivo);
+      FileReader fichero = new FileReader("Tema 6/EliminarComentarios/fichero.txt");
+        BufferedReader lector = new BufferedReader(fichero);
         PrintWriter escritor = new PrintWriter("Tema 6/EliminarComentarios/ficheroResultado.txt");
 
         String linea;
@@ -39,7 +39,7 @@ public class EliminarComentario {
         }
 
         escritor.close();
-        archivo.close();
+        fichero.close();
         lector.close();
     }
 }
