@@ -9,19 +9,19 @@ public class EstadisticaTexto {
 
     public void contarLetras() throws IOException{
     
-        BufferedReader fichero = new BufferedReader(new FileReader("Tema6/EstadisticasTexto/fichero.txt"));
+        try (BufferedReader fichero = new BufferedReader(new FileReader("Tema6/EstadisticasTexto/fichero.txt"))) {
+            String line;
+            int letras = 0;
 
-        String line;
-        int letras = 0;
-
-        while ((line = fichero.readLine()) != null) {
-            if (line.equals("")) {
-                System.out.println("Nada");
-            }else{
-                letras += line.length();
+            while ((line = fichero.readLine()) != null) {
+                if (line.equals("")) {
+                    System.out.println("Nada");
+                }else{
+                    letras += line.length();
+                }
             }
+            System.out.println("Número de letras :" +letras);
         }
-        System.out.println("Número de letras :" +letras);
     }
       
     public void contarPalabra(){
@@ -41,11 +41,34 @@ public class EstadisticaTexto {
         } catch (IOException e){
             e.printStackTrace();
         }
-        System.out.println("Palabras contadas: " + contador);
+        System.out.println("Número de palabras: " + contador);
     }
+
+    public void contarLineas() throws IOException{
+
+        try (BufferedReader fichero = new BufferedReader(new FileReader("Tema6/EstadisticasTexto/fichero.txt"))) {
+            String cadena;
+            long lineas = 0;
+
+            while ((cadena= fichero.readLine()) != null) {
+               lineas++;
+            }
+            System.out.println("Número de lineas :" +lineas);
+        }
+    }
+
+    public void contarVocales() throws IOException{
+
+        BufferedReader fichero = new BufferedReader(new FileReader("Tema6/EstadisticasTexto/fichero.txt"));
+
+        
+    }
+
     public static void main(String[] args) throws IOException {
         EstadisticaTexto e1 = new EstadisticaTexto();
         e1.contarLetras();
         e1.contarPalabra();
+        e1.contarLineas();
+        e1.contarVocales();
     }
 }  
