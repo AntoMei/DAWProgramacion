@@ -6,6 +6,13 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch EstadisticaTexto",
+        "request": "launch",
+        "mainClass": "EstadisticasTexto.EstadisticaTexto",
+        "projectName": "DAWProgramacion-1_57501b73"
+      },
+      {
+        "type": "java",
         "name": "Launch ContarPalabra",
         "request": "launch",
         "mainClass": "ContarPalabra.ContarPalabra",
