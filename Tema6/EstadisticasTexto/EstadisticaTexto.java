@@ -7,10 +7,23 @@ import java.io.IOException;
 
 public class EstadisticaTexto {
 
-    public void contarLetras(){
+    public void contarLetras() throws IOException{
+    
         BufferedReader fichero = new BufferedReader(new FileReader("Tema6/EstadisticasTexto/fichero.txt"));
-        
-            
+
+        String line;
+        int letras = 0;
+
+        while ((line = fichero.readLine()) != null) {
+            if (line.equals("")) {
+                System.out.println("Nada");
+            }else{
+                letras += line.length();
+            }
+        }
+        System.out.println("Número de letras :" +letras);
+    }
+      
     public void contarPalabra(){
         int contador = 0;
         try {
@@ -28,10 +41,11 @@ public class EstadisticaTexto {
         } catch (IOException e){
             e.printStackTrace();
         }
-        System.out.println("\nPalabras contadas: " + contador);
+        System.out.println("Palabras contadas: " + contador);
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         EstadisticaTexto e1 = new EstadisticaTexto();
+        e1.contarLetras();
         e1.contarPalabra();
     }
 }  
