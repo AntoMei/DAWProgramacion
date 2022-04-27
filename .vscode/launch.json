@@ -6,6 +6,13 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch ContarPalabra",
+        "request": "launch",
+        "mainClass": "ContarPalabra.ContarPalabra",
+        "projectName": "DAWProgramacion-1_57501b73"
+      },
+      {
+        "type": "java",
         "name": "Launch EliminarTodoComentario",
         "request": "launch",
         "mainClass": "Eliminar.EliminarTodoComentario",
