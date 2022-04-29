@@ -6,6 +6,20 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch PersistenciaCliente",
+        "request": "launch",
+        "mainClass": "ControlFicheros.PersistenciaCliente",
+        "projectName": "DAWProgramacion-1_57501b73"
+      },
+      {
+        "type": "java",
+        "name": "Launch Test",
+        "request": "launch",
+        "mainClass": "ControlFicheros.Test",
+        "projectName": "DAWProgramacion-1_57501b73"
+      },
+      {
+        "type": "java",
         "name": "Launch EstadisticaTexto",
         "request": "launch",
         "mainClass": "EstadisticasTexto.EstadisticaTexto",
