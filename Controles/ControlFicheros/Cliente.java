@@ -32,6 +32,4 @@ public class Cliente extends Persona {
         return "Id: \t" + id + "\n" + "Nif: \t" + nif + "\n" + "Nombre: \t" + nombre + "\n"
             + "Apellidos: \t" + apellidos + "\n" + "Email: \t" + email;
     }   
-    
-    
 }
