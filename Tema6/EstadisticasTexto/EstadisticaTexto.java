@@ -7,32 +7,35 @@ import java.io.IOException;
 
 public class EstadisticaTexto {
 
+    double contadorLetras = 0;
+    double contadorLineas = 0;
+    double contadorVocales = 0;
+
     public void contarLetras() throws IOException{
     
         try (BufferedReader fichero = new BufferedReader(new FileReader("Tema6/EstadisticasTexto/fichero.txt"))) {
             String line;
-            int letras = 0;
 
             while ((line = fichero.readLine()) != null) {
                 if (line.equals("")) {
                     System.out.println("Nada");
                 }else{
-                    letras += line.length();
+                    contadorLetras += line.length();
                 }
             }
-            System.out.println("Número de letras :" +letras);
+            System.out.println("Número de letras :" +contadorLetras);
         }
     }
       
     public void contarPalabra(){
-        int contador = 0;
+        int contadorPalabras = 0;
         try {
         
             BufferedReader fichero = new BufferedReader(new FileReader("Tema6/EstadisticasTexto/fichero.txt"));
             String linea = fichero.readLine();
             while (linea != null) {
                 String [] palabras = linea.split(" ");
-                contador += palabras.length;
+                contadorPalabras += palabras.length;
                 linea = fichero.readLine();
             }
             fichero.close();
@@ -41,27 +44,45 @@ public class EstadisticaTexto {
         } catch (IOException e){
             e.printStackTrace();
         }
-        System.out.println("Número de palabras: " + contador);
+        System.out.println("Número de palabras: " + contadorPalabras);
     }
 
     public void contarLineas() throws IOException{
 
         try (BufferedReader fichero = new BufferedReader(new FileReader("Tema6/EstadisticasTexto/fichero.txt"))) {
             String cadena;
-            long lineas = 0;
 
             while ((cadena= fichero.readLine()) != null) {
-               lineas++;
+               contadorLineas++;
             }
-            System.out.println("Número de lineas :" +lineas);
+            System.out.println("Número de lineas :" +contadorLineas);
         }
     }
 
     public void contarVocales() throws IOException{
 
         BufferedReader fichero = new BufferedReader(new FileReader("Tema6/EstadisticasTexto/fichero.txt"));
+        String linea = fichero.readLine();
+        char [] vocales = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+        char [] charLine = linea.toCharArray();
+        while (linea != null) {
+        for (int i = 0; i < charLine.length; i++) {
+            for (int j = 0; j < vocales.length; j++) {
+                if (charLine[i]==vocales[j]) {
+                    contadorVocales++;
+                }
+            }
+        }
+        linea = fichero.readLine();
+    }
+    System.out.println("Numero de vocales :" + contadorVocales);
+}
+    
+    public void porcentajesVocales(){
+        double contadorPorcentajes = 0;
+        contadorPorcentajes = (contadorVocales * 100.00) / contadorLetras;
+        System.out.println("% de vocales : " + contadorPorcentajes);
 
-        
     }
 
     public static void main(String[] args) throws IOException {
@@ -70,5 +91,6 @@ public class EstadisticaTexto {
         e1.contarPalabra();
         e1.contarLineas();
         e1.contarVocales();
+        e1.porcentajesVocales();
     }
 }  
