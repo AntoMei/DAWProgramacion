@@ -31,5 +31,5 @@ public class PersistenciaCliente implements Serializable{
       }
 
     public void read() throws IOException{
-    }
   }
+}
