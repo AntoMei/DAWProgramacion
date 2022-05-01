@@ -59,7 +59,8 @@ public class PersistenciaCliente implements Serializable{
        }
       }
     }
-    
+  
+
           /* try(BufferedReader br = new BufferedReader(new FileReader(file)))
         {
             String line;
