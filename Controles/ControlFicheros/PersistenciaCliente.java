@@ -1,6 +1,8 @@
 package ControlFicheros;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Serializable;
@@ -31,5 +33,18 @@ public class PersistenciaCliente implements Serializable{
       }
 
     public void read() throws IOException{
+
+       String file = "Controles/ControlFicheros/clientes.dat";
+
+       try(BufferedReader br = new BufferedReader(new FileReader(file)))
+        {
+            String line;
+            while ((line = br.readLine()) != null) {
+                System.out.println(line);
+        }
+       } catch (Exception e) {
+          System.out.println("Error");
+          e.printStackTrace();
   }
-}
+    }
+  }
