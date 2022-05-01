@@ -6,5 +6,5 @@ Crea una aplicacion con las siguientes caracteristicas:
 
 - Sobreescribe el metodo toString para mostrar los atributos de forma tabulada.
 
-- Crea una clase PersisstenciaCliente, con un metodo write, que recibe un arrayList de clientes de tal forma que escribe en un fichero (clientes.dat) todos los clientes recibidos en el arrayList. Cada cliente se escribe en una linea con los atributos separados por comas
+- Crea una clase PersistenciaCliente, con un metodo write, que recibe un arrayList de clientes de tal forma que escribe en un fichero (clientes.dat) todos los clientes recibidos en el arrayList. Cada cliente se escribe en una linea con los atributos separados por comas
 Ejemplo: 1, 12345678a, Antonio, puf puf, email. Crea un metodo read que recibe el nombre del fichero a leer y devuelve un arrayList con los clientes que ha conseguido leer.
