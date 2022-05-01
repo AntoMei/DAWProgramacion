@@ -6,6 +6,13 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch Test",
+        "request": "launch",
+        "mainClass": "ControlFicheros.Test",
+        "projectName": "DAWProgramacion_a2bfc189"
+      },
+      {
+        "type": "java",
         "name": "Launch PersistenciaCliente",
         "request": "launch",
         "mainClass": "ControlFicheros.PersistenciaCliente",

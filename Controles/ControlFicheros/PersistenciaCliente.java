@@ -1,45 +1,35 @@
 package ControlFicheros;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
+import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.io.Serializable;
 import java.util.ArrayList;
 
 public class PersistenciaCliente implements Serializable{
 
-    private ArrayList <Cliente> datos;
+     ArrayList <Cliente> datos;
 
-    public PersistenciaCliente(ArrayList<Cliente> datos) {
-        this.datos = datos;
+    public PersistenciaCliente(){
+      datos = new ArrayList<>();
     }
 
     public void write() throws IOException{
 
-        String ruta = "Controles/ControlFicheros/clientes.dat";
-        File fichero = new File(ruta);
-        FileWriter ficheroWrite = new FileWriter(fichero);
-        try (PrintWriter archivo = new PrintWriter(ficheroWrite)) {
-            for (int i = 0; i < datos.size(); i++) {
-                archivo.print(datos.get(i));   
-            }
-            archivo.close();
+        try {
+          BufferedWriter archivo = new BufferedWriter(new FileWriter("Controles/ControlFicheros/clientes.dat"));
+
+          for (Cliente item : datos) {
+            String cliente = 
+            "Id " + item.getId() + ", Nif " + item.getNif() + ", Nombre " + item.getNombre() + ", Apellidos " + item.getApellidos() + "email " + item.getEmail() + "\n";
+            archivo.write(cliente);
+          }
+          archivo.close();
+        } catch (Exception e) {
+         System.out.println(e.getMessage());
         }
-    }
+      }
 
     public void read() throws IOException{
-
-        String ruta = "Controles/ControlFicheros/clientes.dat";
-        File fichero = new File(ruta);
-        FileReader ficheroRead = new FileReader(fichero);
-        try (BufferedReader archivo = new BufferedReader(ficheroRead)) {
-            for (int i = 0; i < datos.size(); i++) {
-                archivo.readLine();  
-            }
-            archivo.close();
-        }
     }
-}   
+  }
