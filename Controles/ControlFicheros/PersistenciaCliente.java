@@ -2,71 +2,60 @@ package ControlFicheros;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Scanner;
 
-public class PersistenciaCliente implements Serializable{
+public class PersistenciaCliente {
 
-     ArrayList <Cliente> datos;
+    private static final String nombreFichero = "Controles/ControlFicheros/clientes.dat";
 
-    public PersistenciaCliente(){
-      datos = new ArrayList<>();
-    }
-
-    public void write() throws IOException{
+    public void write(ArrayList<Cliente> clientes) throws IOException{
 
         try {
-          BufferedWriter archivo = new BufferedWriter(new FileWriter("Controles/ControlFicheros/clientes.dat"));
+          BufferedWriter archivo = new BufferedWriter(new FileWriter(nombreFichero));
 
-          for (Cliente item : datos) {
-            String cliente = 
-            "Id " + item.getId() + ", Nif " + item.getNif() + ", Nombre " + item.getNombre() + ", Apellidos " + item.getApellidos() + "email " + item.getEmail() + "\n";
-            archivo.write(cliente);
+          for (Cliente cliente : clientes) {
+            String linea = cliente.getId() + ", " + 
+                            cliente.getNif() + ", " + 
+                            cliente.getNombre() + ", " + 
+                            cliente.getApellidos() + ", " + 
+                            cliente.getEmail() + "\n";
+            archivo.write(linea);
           }
           archivo.close();
-        } catch (Exception e) {
-         System.out.println(e.getMessage());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
       }
 
-    public void read() throws IOException{
+    public ArrayList<Cliente> read() throws IOException{
 
-       String file = "Controles/ControlFicheros/clientes.dat";
-       String linea;
-       ArrayList<Cliente> lista = new ArrayList<>();
+        ArrayList<Cliente> resultado = new ArrayList<>();
 
-       System.out.println("Leyendo el fichero: " +file);
+        FileReader ficheroLectura;
+        BufferedReader lector;
 
-       try (Scanner teclado = new Scanner(new File(file))){
+        try {
+            ficheroLectura = new FileReader(nombreFichero);
+            lector = new BufferedReader(ficheroLectura);
 
-         while (teclado.hasNextLine()) {
+            String linea;
 
-          linea = teclado.nextLine();
-          lista.add(linea);
-          for (int i = 0; i < lista.size(); i++) {
-            System.out.println(lista.get(i));
-          }
-         }
-       } catch (Exception e) {
-         System.out.println(e.getMessage());
-       }
-      }
+            while ((linea = lector.readLine()) != null) {
+                String [] trozos = linea.split(",");
+                Cliente cliente = new Cliente(trozos[0], trozos[1], trozos[2], trozos[3], trozos[4]);
+                resultado.add(cliente);
+            }
+            
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return resultado;
     }
-  
-
-          /* try(BufferedReader br = new BufferedReader(new FileReader(file)))
-        {
-            String line;
-            while ((line = br.readLine()) != null) {
-                System.out.println(line);
-        }
-       } catch (Exception e) {
-          System.out.println("Error");
-          e.printStackTrace();*/
+}

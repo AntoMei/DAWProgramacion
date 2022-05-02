@@ -2,20 +2,20 @@ package ControlFicheros;
 
 public class Cliente extends Persona {
    
-    private int id;
+    private String id;
     private String email;
 
-    public Cliente(int id, String nif, String nombre, String apellidos, String email){
+    public Cliente(String id, String nif, String nombre, String apellidos, String email){
         super(nif, nombre, apellidos);
         this.id = id;
         this.email = email;
     }
    
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -30,9 +30,4 @@ public class Persona {
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
     }
-
-    @Override
-    public String toString() {
-      return "Nif: \t " + nif + "\n" +  "Nombre: \t " + nombre + "\n" + "Apellidos: \t " + apellidos;
-    }
 }
