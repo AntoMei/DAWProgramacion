@@ -2,7 +2,7 @@ package ControlFicheros;
 
 import java.io.Serializable;
 
-public class Cliente extends Persona  implements Serializable {
+public class Cliente extends Persona implements Serializable {
    
     private String id;
     private String email;
