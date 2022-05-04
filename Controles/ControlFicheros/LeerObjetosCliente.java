@@ -9,20 +9,8 @@ public class LeerObjetosCliente {
     public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
         
         ObjectInputStream archivo = new ObjectInputStream(new FileInputStream("Controles/ControlFicheros/Clientes.obj"));
-        
-        Object c1 = archivo.readObject();
-
-        while (c1!=null) {
-            if (c1 instanceof Persona) {
-                System.out.println(c1);
-                c1 = archivo.readObject();
-                
-            }
-            archivo.close();   
-        }
-    }
-}
-        /*Cliente c1;
+    
+        Cliente c1;
         try {
             while (true) {
                 c1 = (Cliente) archivo.readObject();
@@ -35,4 +23,7 @@ public class LeerObjetosCliente {
             }
 
         } catch (Exception e) {
-            archivo.close();*/
+            archivo.close();
+        }
+    } 
+}

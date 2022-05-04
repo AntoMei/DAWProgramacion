@@ -18,7 +18,7 @@ public class CrearObjetosCliente {
 
         Cliente c1;
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 4; i++) {
             c1 = new Cliente(id[i],nif[i],nombre[i],apellidos[i],email[i]);
             archivo.writeObject(c1);
             
