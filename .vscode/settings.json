@@ -10,7 +10,8 @@
       "Aceptaelreto",
       "Controles",
       "SolucionE2",
-      "Tema6"
+      "Tema6",
+      "EjemplosPracticar"
     ],
     "java.project.referencedLibraries": [
       "lib/**/*.jar",

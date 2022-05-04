@@ -6,6 +6,20 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch EjemploEmpleados",
+        "request": "launch",
+        "mainClass": "EjemploEmpleados",
+        "projectName": "DAWProgramacion-1_57501b73"
+      },
+      {
+        "type": "java",
+        "name": "Launch Ejemplo1",
+        "request": "launch",
+        "mainClass": "Ejemplo1",
+        "projectName": "DAWProgramacion-1_57501b73"
+      },
+      {
+        "type": "java",
         "name": "Launch PersistenciaClienteTest",
         "request": "launch",
         "mainClass": "ControlFicheros.PersistenciaClienteTest",
