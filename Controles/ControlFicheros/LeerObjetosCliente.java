@@ -20,6 +20,8 @@ public class LeerObjetosCliente {
             }
             archivo.close();   
         }
+    }
+}
         /*Cliente c1;
         try {
             while (true) {
@@ -34,5 +36,3 @@ public class LeerObjetosCliente {
 
         } catch (Exception e) {
             archivo.close();*/
-    } 
-}
