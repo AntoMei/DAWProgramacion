@@ -15,6 +15,8 @@
     ],
     "java.project.referencedLibraries": [
       "lib/**/*.jar",
-      "/home/alumno/Desktop/jl1.0.1.jar"
+      "/home/alumno/Desktop/jl1.0.1.jar",
+      "/home/INFORMATICA/alu10216666/Escriptori/w3c-css.jar.zip",
+      "/home/INFORMATICA/alu10216666/Escriptori/dom4j-2.1.3.jar"
     ]
 }

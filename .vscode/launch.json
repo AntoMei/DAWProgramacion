@@ -6,6 +6,20 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch LeerClienteXML",
+        "request": "launch",
+        "mainClass": "ControlFicheros.LeerClienteXML",
+        "projectName": "DAWProgramacion-1_57501b73"
+      },
+      {
+        "type": "java",
+        "name": "Launch CrearClienteXML",
+        "request": "launch",
+        "mainClass": "ControlFicheros.CrearClienteXML",
+        "projectName": "DAWProgramacion-1_57501b73"
+      },
+      {
+        "type": "java",
         "name": "Launch LeerObjetosCliente",
         "request": "launch",
         "mainClass": "ControlFicheros.LeerObjetosCliente",
