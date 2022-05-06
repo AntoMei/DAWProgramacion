@@ -17,7 +17,6 @@ public class EscribirEnFicheroJSON {
         ObjectInputStream archivo = new ObjectInputStream(new FileInputStream("Controles/ControlFicheros/Clientes.obj"));
         
         Cliente c1;
-        try{
         while (true) {
             c1 = (Cliente) archivo.readObject();
      
@@ -39,3 +38,4 @@ public class EscribirEnFicheroJSON {
         w_json.close();
     
     } 
+}
