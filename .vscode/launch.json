@@ -6,6 +6,13 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch EliminarComentario",
+        "request": "launch",
+        "mainClass": "Eliminar.EliminarComentario",
+        "projectName": "DAWProgramacion-1_57501b73"
+      },
+      {
+        "type": "java",
         "name": "Launch EscribirEnFicheroJSON",
         "request": "launch",
         "mainClass": "ControlFicheros.EscribirEnFicheroJSON",
