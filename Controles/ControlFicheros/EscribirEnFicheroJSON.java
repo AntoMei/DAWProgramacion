@@ -1,17 +1,21 @@
 package ControlFicheros;
 
-import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 public class EscribirEnFicheroJSON {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         
-        ObjectInputStream archivo = new ObjectInputStream(new FileInputStream("Controles/ControlFicheros/Clientes.obj"));
-        final Cliente cliente = new Cliente("2", "948i9084", "Antonio", "Meirosu", "antonio.meirosu@gmial.com");
-        final Gson gson = new Gson();
-        final String representacionesJSON = gson.toJson(cliente);
-        System.out.println(representacionesJSON);
+        ObjectOutputStream archivo = new ObjectOutputStream(new FileOutputStream("Controles/ControlFicheros/clientes.json"));
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        for(Cliente cliente: PersistenciaCliente.clientes){
+            String imprimirGson = gson.toJson(cliente);
+            archivo.writeUTF(imprimirGson);
+        }
+        archivo.close();
     }   
 } 

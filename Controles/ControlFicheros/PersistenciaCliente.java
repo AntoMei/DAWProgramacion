@@ -10,6 +10,12 @@ import java.util.ArrayList;
 
 public class PersistenciaCliente {
 
+    public static ArrayList<Cliente> clientes;
+
+    public PersistenciaCliente() {
+        clientes = new ArrayList<>();
+    }
+
     private static final String nombreFichero = "Controles/ControlFicheros/clientes.dat";
 
     public void write(ArrayList<Cliente> clientes) throws IOException{
