@@ -14,7 +14,7 @@ import org.w3c.dom.NodeList;
 public class LeerBooks {
     public static void main(String[] args) throws Exception{
 
-        String expresionXpath = "//catalog/book/genre";
+        String expresionXpath = "//catalog/book/genre[not(. = following::genre/.)]";
     
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
