@@ -1,23 +1,29 @@
 package ControlFicheros;
 
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.PrintWriter;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 public class EscribirEnFicheroJSON {
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
-        
-        ObjectOutputStream archivo = new ObjectOutputStream(new FileOutputStream("Controles/ControlFicheros/clientes.json"));
-        final Cliente c1 = new Cliente("1", "12345678a", "Antonio", "Meirosu", "antonio.meirosu@gmail.com");
-        final Cliente c2 = new Cliente("2", "12345678b", "Ant", "Me", "anto.meirosu@gmail.com");
-        final Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        final String imprimir1 = gson.toJson(c1);
-        final String imprimir2 = gson.toJson(c2);
-        archivo.writeUTF(imprimir1);
-        archivo.writeUTF(imprimir2);
+    public static void main(String[] args) throws IOException {
+
+        PrintWriter archivo = new PrintWriter("Controles/ControlFicheros/clientes.json");
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+
+        archivo.write("[");
+
+        for (int i = 0; i < PersistenciaCliente.clientes.size(); i++) {
+            if (i != PersistenciaCliente.clientes.size()-1) {
+                String imprimir = gson.toJson(PersistenciaCliente.clientes.get(i));
+                archivo.write(imprimir + ",");
+            }else{
+                String imprimirGson = gson.toJson(PersistenciaCliente.clientes.get(i));
+                archivo.write(imprimirGson);
+            }
+        }
+        archivo.write("]");
         archivo.close();
-    }  
+    }
 }

@@ -6,6 +6,13 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch LeerEnFicheroJSON",
+        "request": "launch",
+        "mainClass": "ControlFicheros.LeerEnFicheroJSON",
+        "projectName": "DAWProgramacion-1_57501b73"
+      },
+      {
+        "type": "java",
         "name": "Launch LeerBooks",
         "request": "launch",
         "mainClass": "LeerGenerosDeBooks.LeerBooks",
