@@ -6,6 +6,13 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch LeerPaginaWeb",
+        "request": "launch",
+        "mainClass": "LeerPaginaWeb.LeerPaginaWeb",
+        "projectName": "DAWProgramacion-1_57501b73"
+      },
+      {
+        "type": "java",
         "name": "Launch LeerEnFicheroJSON",
         "request": "launch",
         "mainClass": "ControlFicheros.LeerEnFicheroJSON",
