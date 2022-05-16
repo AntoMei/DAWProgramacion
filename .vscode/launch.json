@@ -6,6 +6,13 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch ContarPalabra",
+        "request": "launch",
+        "mainClass": "ContarPalabra.ContarPalabra",
+        "projectName": "DAWProgramacion_4b96c5bf"
+      },
+      {
+        "type": "java",
         "name": "Launch LeerPaginaWeb",
         "request": "launch",
         "mainClass": "LeerPaginaWeb.LeerPaginaWeb",
