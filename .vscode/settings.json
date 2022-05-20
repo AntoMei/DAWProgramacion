@@ -11,7 +11,8 @@
       "Controles",
       "SolucionE2",
       "Tema6",
-      "EjemplosPracticar"
+      "EjemplosPracticar",
+      "Tema7"
     ],
     "java.project.referencedLibraries": [
       "lib/**/*.jar",
