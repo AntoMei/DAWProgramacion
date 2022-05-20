@@ -6,9 +6,9 @@ public class MySql{
     public static void main(String[] args) {
         try
         {
-            Class.forName("dev.mysql.com/downloads/connector/j/");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con=DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/clientes","phpmyadmin2","phpmyadmin");
+                    "jdbc:mysql://localhost:3306/clientes","phpmyadmin2","phpmyadmin2");
             Statement stmt=con.createStatement();  
             ResultSet rs=stmt.executeQuery("show databases;");
             System.out.println("Connected");  
