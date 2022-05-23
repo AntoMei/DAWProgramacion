@@ -6,6 +6,13 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch Test",
+        "request": "launch",
+        "mainClass": "Agenda.Test",
+        "projectName": "DAWProgramacion-1_57501b73"
+      },
+      {
+        "type": "java",
         "name": "Launch MySql",
         "request": "launch",
         "mainClass": "MySql",
