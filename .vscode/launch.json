@@ -9,6 +9,13 @@
         "name": "Launch MySql",
         "request": "launch",
         "mainClass": "MySql",
+        "projectName": "DAWProgramacion_4b96c5bf"
+      },
+      {
+        "type": "java",
+        "name": "Launch MySql",
+        "request": "launch",
+        "mainClass": "MySql",
         "projectName": "DAWProgramacion-1_57501b73"
       },
       {
