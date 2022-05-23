@@ -6,7 +6,7 @@ public class MySql{
     public static void main(String[] args) {
         try
         {
-            Class.forName("dev.mysql.com/downloads/connector/j/");
+            Class.forName("com.mysql.jc.jdbc.Driver");
             Connection con=DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/clientes","phpmyadmin2","phpmyadmin");
             Statement stmt=con.createStatement();  
