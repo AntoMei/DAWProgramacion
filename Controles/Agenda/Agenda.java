@@ -1,8 +1,11 @@
 package Agenda;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
@@ -58,7 +61,21 @@ public class Agenda {
     }
    
 
-    public void imprimirListadoTexto() throws FileNotFoundException, IOException{
+    public void imprimirListadoTexto() throws IOException{
+
+        File doc = new File("Controles/Agenda/agenda.dat");
+
+        try (BufferedReader objeto = new BufferedReader(new FileReader(doc))) {
+            String strng;
+            while ((strng = objeto.readLine()) != null)
+              System.out.println(strng);
+        } catch (FileNotFoundException e) {
+            throw e;
+        }
+    }
+       
+    
+    public void imprimirlistadoObjetos() throws FileNotFoundException, IOException{
 
         ObjectOutputStream archivo = new ObjectOutputStream(new FileOutputStream("Controles/Agenda/agendaObjetos.dat"));
 
@@ -69,9 +86,6 @@ public class Agenda {
             archivo.writeObject(u2);
         }
         archivo.close();
-    }
-    
-    public void imprimirlistadoObjetos(){
 
     }
 }
