@@ -48,4 +48,10 @@ public class Usuario implements Serializable{
     public void setTelefono(int telefono) {
         this.telefono = telefono;
     }
+
+    @Override
+    public String toString() {
+        return "Usuario [apellidos=" + apellidos + ", email=" + email + ", nombre=" + nombre + ", telefono=" + telefono
+                + "]";
+    }
 }
