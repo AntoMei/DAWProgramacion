@@ -22,3 +22,13 @@ public class LeerEnFicheroJSON {
         }
     }
 }
+/* private static void leerJSON() throws IOException{
+        BufferedReader lector = new BufferedReader(new FileReader("Tema 6/ControlFicheros/Clientes.json"));
+        Gson gson = new Gson();
+
+        Type tipoListaClientes = new TypeToken<List<Cliente>>(){}.getType();
+        List<Cliente> clientes = gson.fromJson(lector, tipoListaClientes);
+        for (Cliente cliente : clientes) {
+            System.out.println(cliente.toString());
+        }
+    }*/

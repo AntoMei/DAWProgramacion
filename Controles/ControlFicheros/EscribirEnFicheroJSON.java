@@ -27,3 +27,23 @@ public class EscribirEnFicheroJSON {
         archivo.close();
     }
 }
+/* private static void crearClientesJSON() throws IOException{
+    
+        PrintWriter writer = new PrintWriter("Tema 6/ControlFicheros/Clientes.json");
+        Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
+
+        writer.write("[");
+
+        for (int i = 0; i < PresistenciaCliente.clientes.size(); i++) {
+            if(i != PresistenciaCliente.clientes.size()-1){
+                String prettyPrinting = prettyGson.toJson(PresistenciaCliente.clientes.get(i));
+                writer.write(prettyPrinting + ",");
+            }else{
+                String prettyPrinting = prettyGson.toJson(PresistenciaCliente.clientes.get(i));
+                writer.write(prettyPrinting);
+            }
+        }
+        writer.write("]");
+        writer.close();
+
+    }*/
