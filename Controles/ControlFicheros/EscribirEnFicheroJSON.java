@@ -36,14 +36,14 @@ public class EscribirEnFicheroJSON {
 
         for (int i = 0; i < PersistenciaCliente.clientes.size(); i++) {
             if(i != PersistenciaCliente.clientes.size()-1){
-                String prettyPrinting = prettyGson.toJson(PersistenciaCliente.clientes.get(i));
+                String prettyPrinting = prettyGson.toJson(PersistenciaCliente.clientes.get(i);
                 archivo.write(prettyPrinting + ",");
             }else{
-                String prettyPrinting = prettyGson.toJson(PersistenciaCliente.clientes.get(i));
+                String prettyPrinting = prettyGson.toJson(PersistenciaCliente.clientes.get(i);
                 archivo.write(prettyPrinting);
             }
         }
         archivo.write("]");
         archivo.close();
-
+      }
     }*/
