@@ -22,6 +22,7 @@ public class LeerEnFicheroJSON {
         }
     }
 }
+
 /* private static void leerJSON() throws IOException{
   
         BufferedReader archivo = new BufferedReader(new FileReader("Controles/ControlFicheros/clientes.json"));
