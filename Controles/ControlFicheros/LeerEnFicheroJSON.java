@@ -23,7 +23,7 @@ public class LeerEnFicheroJSON {
     }
 }
 /* private static void leerJSON() throws IOException{
-        BufferedReader lector = new BufferedReader(new FileReader("Tema 6/ControlFicheros/Clientes.json"));
+        BufferedReader archivo = new BufferedReader(new FileReader("Controles/ControlFicheros/clientes.json"));
         Gson gson = new Gson();
 
         Type tipoListaClientes = new TypeToken<List<Cliente>>(){}.getType();

@@ -29,21 +29,21 @@ public class EscribirEnFicheroJSON {
 }
 /* private static void crearClientesJSON() throws IOException{
     
-        PrintWriter writer = new PrintWriter("Tema 6/ControlFicheros/Clientes.json");
+        PrintWriter archivo = new PrintWriter("Controles/ControlFicheros/clientes.json");
         Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
 
-        writer.write("[");
+        archivo.write("[");
 
-        for (int i = 0; i < PresistenciaCliente.clientes.size(); i++) {
-            if(i != PresistenciaCliente.clientes.size()-1){
-                String prettyPrinting = prettyGson.toJson(PresistenciaCliente.clientes.get(i));
-                writer.write(prettyPrinting + ",");
+        for (int i = 0; i < PersistenciaCliente.clientes.size(); i++) {
+            if(i != PersistenciaCliente.clientes.size()-1){
+                String prettyPrinting = prettyGson.toJson(PersistenciaCliente.clientes.get(i));
+                archivo.write(prettyPrinting + ",");
             }else{
-                String prettyPrinting = prettyGson.toJson(PresistenciaCliente.clientes.get(i));
-                writer.write(prettyPrinting);
+                String prettyPrinting = prettyGson.toJson(PersistenciaCliente.clientes.get(i));
+                archivo.write(prettyPrinting);
             }
         }
-        writer.write("]");
-        writer.close();
+        archivo.write("]");
+        archivo.close();
 
     }*/
