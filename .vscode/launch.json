@@ -6,6 +6,20 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch PersistenciaClienteTest",
+        "request": "launch",
+        "mainClass": "Repaso.PersistenciaClienteTest",
+        "projectName": "DAWProgramacion_a2bfc189"
+      },
+      {
+        "type": "java",
+        "name": "Launch CrearTodo",
+        "request": "launch",
+        "mainClass": "Repaso.CrearTodo",
+        "projectName": "DAWProgramacion_a2bfc189"
+      },
+      {
+        "type": "java",
         "name": "Launch Test",
         "request": "launch",
         "mainClass": "Agenda.Test",
