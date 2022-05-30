@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class MySql{
     public static void main(String[] args) {
        
-       String consulta = "SELECT count(*) as total FROM Cliente";
+       String consulta = "SELECT * FROM Cliente";
        String connectioURL = "jdbc:mysql://10.0.2.4:3306/clientes";
 
        try {
@@ -22,8 +22,7 @@ public class MySql{
             ResultSet rs = ps.executeQuery()){
 
                 while (rs.next()) {
-                    int total = rs.getInt("total");
-                    System.out.println("Total: " + total);
+                    System.out.println(rs.getInt(1) + " " + rs.getString(2) + " " + rs.getString(3) + " " + rs.getString(4));
                 }
     
        } catch (SQLException e) {
