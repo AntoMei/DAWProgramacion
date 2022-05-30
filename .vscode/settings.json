@@ -22,6 +22,10 @@
       "/home/INFORMATICA/alu10216666/Escriptori/gson-2.9.0.jar",
       "/home/INFORMATICA/alu10216666/Escriptori/mysql-connector-java-8.0.29/mysql-connector-java-8.0.29.jar",
       "/home/alumno/Descargas/mysql-connector-java-8.0.29/mysql-connector-java-8.0.29.jar",
+<<<<<<< HEAD
       "/usr/share/java/mysql-connector-java-8.0.29.jar"
+=======
+      "c:\\Users\\Antonio\\Desktop\\gson-2.8.2.jar"
+>>>>>>> 98e0702d704f03bd05fe0b5b7d5eab020ef85eb3
     ]
 }

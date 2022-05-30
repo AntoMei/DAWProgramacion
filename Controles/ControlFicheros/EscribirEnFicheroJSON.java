@@ -19,11 +19,32 @@ public class EscribirEnFicheroJSON {
                 String imprimir = gson.toJson(PersistenciaCliente.clientes.get(i));
                 archivo.write(imprimir + ",");
             }else{
-                String imprimirGson = gson.toJson(PersistenciaCliente.clientes.get(i));
-                archivo.write(imprimirGson);
+                String imprimir = gson.toJson(PersistenciaCliente.clientes.get(i));
+                archivo.write(imprimir);
             }
         }
         archivo.write("]");
         archivo.close();
     }
 }
+
+/* private static void crearClientesJSON() throws IOException{
+    
+        PrintWriter archivo = new PrintWriter("Controles/ControlFicheros/clientes.json");
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+
+        archivo.write("[");
+
+        for (int i = 0; i < PersistenciaCliente.clientes.size(); i++) {
+            if(i != PersistenciaCliente.clientes.size()-1){
+                String imprimir = gson.toJson(PersistenciaCliente.clientes.get(i);
+                archivo.write(imprimir + ",");
+            }else{
+                String imprimir = gson.toJson(PersistenciaCliente.clientes.get(i);
+                archivo.write(imprimir);
+            }
+        }
+        archivo.write("]");
+        archivo.close();
+      }
+    }*/
