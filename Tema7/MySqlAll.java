@@ -31,17 +31,3 @@ public class MySqlAll{
        }
     }
 }
-       
-        /*try
-        {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con=DriverManager.getConnection("jdbc:mysql://10.0.2.4:3306/clientes","phpmyadmin2","phpmyadmin2");
-            Statement stmt=con.createStatement();  
-            ResultSet rs=stmt.executeQuery("SELECT count(*) from Cliente");
-            System.out.println("Connected");  
-        }
-        catch(Exception e)
-        {
-            System.out.println(e);
-        }
-    }  */
