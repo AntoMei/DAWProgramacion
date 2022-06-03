@@ -1,0 +1,7 @@
+/**
+ * MysqlUpdate
+ */
+public class MysqlUpdate {
+
+    
+}
