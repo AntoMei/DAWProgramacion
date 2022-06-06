@@ -9,8 +9,9 @@ import java.util.Scanner;
  */
 public class MysqlUpdate {
    
-    public static void update() throws ClassNotFoundException {
-        String sqlUpdate = "Update Cliente" + "SET apellidos = ?" + "WHERE id = ?";
+    public static void main(String[] args) throws ClassNotFoundException {
+        
+        String sqlUpdate = "update Cliente set nombre = ?, apellidos = ?, email = ?, nif = ? where nif like ?";
 
         String connectioURL = "jdbc:mysql://10.0.2.4:3306/clientes";
  
@@ -20,22 +21,33 @@ public class MysqlUpdate {
         Connection conn =DriverManager.getConnection(connectioURL,"phpmyadmin2","phpmyadmin2");
             PreparedStatement ps = conn.prepareStatement(sqlUpdate);
             Scanner lector = new Scanner(System.in);
-            System.out.println("Introduzca el apellido");
+
+            System.out.println("Introduzca el nombre: ");
+            String nombre = lector.nextLine();
+            ps.setString(1, nombre);
+
+            System.out.println("Introduzca el apellido: ");
             String apellidos = lector.nextLine();
+            ps.setString(2, apellidos);
 
-            int id = 10;
-            ps.setString(1, apellidos);
-            ps.setInt(2, id);
+            System.out.println("Introduzca el email: ");
+            String email = lector.nextLine();
+            ps.setString(3, email);
 
-            int filaAfectada = ps.executeUpdate();
-            System.out.println(String.format("Fila afectada %d", filaAfectada));
+            System.out.println("Introduzca el nif: ");
+            String nif = lector.nextLine();
+            ps.setString(4, nif);
+
+            System.out.println("Introduzca el nif del cliente al que desea cambiar los datos: ");
+            String nifCliente = lector.nextLine();
+            ps.setString(5, nifCliente);
+
+            ps.executeUpdate();
+            conn.close();
+            lector.close();
 
         } catch (SQLException ex){
             ex.printStackTrace();
         }
-    }
-
-     public static void main(String[] args) throws ClassNotFoundException {
-        update();
     }
 }

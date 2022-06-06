@@ -22,8 +22,6 @@ public class MySQLInsert {
              PreparedStatement ps = conn.prepareStatement(consulta);
              Scanner lector = new Scanner(System.in);
              
-             //while (true) {
-             
              System.out.println("Introduzca el nombre");
              String nombre = lector.nextLine();
 
@@ -45,7 +43,6 @@ public class MySQLInsert {
             ps.execute();
             conn.close();
             lector.close();
-             //}
     
         } catch (SQLException e) {
             //TODO: handle exception
